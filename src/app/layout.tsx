@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: config.site,
     images: [
       {
-        url: config.ogImg,
+        url: config.ogImg ?? `${config.site}/assets/seo/og-image.png`,
         width: 800,
         height: 600,
         alt: "Portfolio preview",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: config.title,
     description: config.description.short,
-    images: [config.ogImg],
+    images: [config.ogImg ?? `${config.site}/assets/seo/og-image.png`],
   },
   robots: {
     index: true,
