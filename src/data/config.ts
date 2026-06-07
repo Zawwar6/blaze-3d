@@ -1,4 +1,6 @@
-const config = {
+import type { Config } from "@/types/config";
+
+const config: Config = {
   title: "Blaze Brand | Premium Vaping Experience",
   description: {
     long: "Blaze Brand crafts premium vaping devices and e-liquids designed for exceptional flavor, smooth performance, and modern lifestyle. Experience bold flavors, cutting-edge technology, and unmatched quality with every puff. From disposable vapes to advanced pod systems and box mods — we elevate your vaping journey.",
@@ -36,8 +38,9 @@ const config = {
     instagram: "https://www.instagram.com/blazebrand/",
     tiktok: "https://www.tiktok.com/@blazebrand",
     facebook: "https://facebook.com/blazebrand",
-    github: "https://github.com/blazebrand", // Optional - for tech/brand account
+    github: "https://github.com/blazebrand",
     linkedin: "https://linkedin.com/company/blazebrand",
+    upwork: "https://www.upwork.com/freelancers/~your-profile",
   },
 };
 
