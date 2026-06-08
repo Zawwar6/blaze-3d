@@ -236,12 +236,12 @@ const HeroSection = () => {
               <BlurIn delay={0.7}>
                 <Tooltip delayDuration={300}>
                   <TooltipTrigger asChild>
-                    <h1 className={cn(
+                    <h3 className={cn(
                       "font-thin text-4xl text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 ml-1 text-left",
                       "cursor-default tracking-widest font-display sm:text-7xl md:text-9xl"
                     )}>
                       We are the Blaze Brand
-                    </h1>
+                    </h3>
                   </TooltipTrigger>
                   <TooltipContent side="top" className="dark:bg-white dark:text-black">
                     Scroll down
@@ -258,14 +258,14 @@ const HeroSection = () => {
               <BlurIn delay={1.4}>
                 <div className="flex flex-wrap items-center gap-4 pt-4">
                   <Link href="#shop">
-                    <Button size="lg" className="bg-white hover:bg-white/90 text-black font-medium px-9 py-6 text-base rounded-xl">
+                    {/* <Button size="lg" className="bg-white hover:bg-white/90 text-black font-medium px-9 py-6 text-base rounded-xl">
                       Shop Collection
-                    </Button>
+                    </Button> */}
                   </Link>
                   <Link href="#shop">
-                    <Button size="lg" className="bg-white hover:bg-white/90 text-black font-medium px-9 py-6 text-base rounded-xl">
+                    {/* <Button size="lg" className="bg-white hover:bg-white/90 text-black font-medium px-9 py-6 text-base rounded-xl">
                       Shop Collection
-                    </Button>
+                    </Button> */}
                   </Link>
 
                   {/* <div className="flex gap-3">
