@@ -83,7 +83,7 @@ const data = [
   {
     title: "BLAZE THCA ELITE 1GM PREROLLS (40 COUNT)",
     items: [
-      { name: "SATIVA STRAIN", pdf: "https://yourdomain.com/pdfs/sativa.pdf" },
+      { name: "SATIVA", pdf: "https://yourdomain.com/pdfs/sativa.pdf" },
       { name: "INDICA DARK STAR", pdf: "https://yourdomain.com/pdfs/dark-star.pdf" },
       { name: "HYBRID BLUE NERDS", pdf: "https://yourdomain.com/pdfs/blue-nerds.pdf" },
     ],
@@ -101,6 +101,10 @@ const data = [
 
 export default function Page() {
   const [open, setOpen] = useState<number | null>(0);
+
+  const handleOpenPdf = (pdf: string) => {
+    window.open(pdf, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-white relative overflow-hidden">
@@ -125,59 +129,77 @@ export default function Page() {
         </div>
 
         {/* ACCORDION */}
-        <div className="space-y-4">
-          {data.map((cat, i) => (
-            <div
-              key={i}
-              className="border border-white/10 rounded-2xl overflow-hidden bg-zinc-900/30 backdrop-blur-xl"
-            >
-              {/* header */}
-              <button
-                onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex justify-between items-center p-6 hover:bg-zinc-900/50 transition"
-              >
-                <h2 className="text-left text-white font-medium">
-                  {cat.title}
-                </h2>
+       <div className="space-y-4">
+  {data.map((cat, i) => {
+    const isOpen = open === i;
 
-                <span className="text-teal-400 text-xl">
-                  {open === i ? "−" : "+"}
-                </span>
-              </button>
+    return (
+      <div
+        key={i}
+        className="border border-white/10 rounded-2xl overflow-hidden bg-zinc-900/30 backdrop-blur-xl transition-all duration-300"
+      >
+        {/* HEADER */}
+        <button
+          onClick={() => setOpen(isOpen ? null : i)}
+          className="w-full flex justify-between items-center p-6 hover:bg-zinc-900/50 transition"
+        >
+          <h2 className="text-left text-white font-medium">
+            {cat.title}
+          </h2>
 
-              {/* content */}
-              {open === i && (
-                <div className="px-6 pb-6">
-                  <div className="h-px bg-white/10 mb-4" />
+          <span
+            className={`text-teal-400 text-xl transition-transform duration-300 ${
+              isOpen ? "rotate-45 scale-110" : "rotate-0"
+            }`}
+          >
+            +
+          </span>
+        </button>
 
-                  <div className="space-y-3">
-                    {cat.items.map((item, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-center justify-between p-3 rounded-lg bg-black/30 border border-white/10"
-                      >
-                        {/* NAME */}
-                        <span className="text-zinc-300 text-sm">
-                          {item.name}
-                        </span>
+        {/* CONTENT (SMOOTH ANIMATION) */}
+        <div
+          className={`grid transition-all duration-500 ease-in-out ${
+            isOpen
+              ? "grid-rows-[1fr] opacity-100"
+              : "grid-rows-[0fr] opacity-0"
+          }`}
+        >
+          <div className="overflow-hidden">
+            <div className="px-6 pb-6">
 
-                        {/* PDF BUTTON */}
-                        <a
-                          href={item.pdf}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="px-4 py-2 text-xs rounded-lg bg-teal-500/10 border border-teal-400/30 text-teal-400 hover:bg-teal-500/20 transition"
-                        >
-                          View PDF
-                        </a>
-                      </div>
-                    ))}
+              {/* divider */}
+              <div className="h-px bg-white/10 mb-4" />
+
+              {/* ITEMS */}
+              <div className="space-y-3">
+                {cat.items.map((item, idx) => (
+                  <div
+                    key={idx}
+                    onClick={() => handleOpenPdf(item.pdf)}
+                    className="group flex items-center justify-between p-3 rounded-lg bg-black/30 border border-white/10 cursor-pointer
+                               hover:bg-black/60 hover:border-teal-400/40 
+                               transition-all duration-300 active:scale-[0.98]"
+                  >
+                    {/* NAME */}
+                    <span className="text-zinc-300 text-sm group-hover:text-white transition">
+                      {item.name}
+                    </span>
+
+                    {/* ICON */}
+                    <span className="text-teal-400 text-sm opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all">
+                      ↗
+                    </span>
                   </div>
-                </div>
-              )}
+                ))}
+              </div>
+
             </div>
-          ))}
+          </div>
         </div>
+      </div>
+    );
+  })}
+</div>
 
         {/* bottom glow */}
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-400/30 to-transparent" />
