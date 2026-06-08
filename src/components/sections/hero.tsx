@@ -237,10 +237,10 @@ const HeroSection = () => {
                 <Tooltip delayDuration={300}>
                   <TooltipTrigger asChild>
                     <h1 className={cn(
-                      "font-thin text-7xl text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 ml-1 text-left",
+                      "font-thin text-4xl text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 ml-1 text-left",
                       "cursor-default tracking-widest font-display sm:text-7xl md:text-9xl"
                     )}>
-                      We are Blaze Brand
+                      We are the Blaze Brand
                     </h1>
                   </TooltipTrigger>
                   <TooltipContent side="top" className="dark:bg-white dark:text-black">
