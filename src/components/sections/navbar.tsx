@@ -42,7 +42,7 @@ const Navbar = () => {
             <Link href="/shop" className="text-zinc-300 hover:text-white transition-colors">Shop</Link>
             <Link href="/about" className="text-zinc-300 hover:text-white transition-colors">About Us</Link>
             <Link href="/products" className="text-zinc-300 hover:text-white transition-colors">Products</Link>
-            <Link href="/blog" className="text-zinc-300 hover:text-white transition-colors">Journal</Link>
+            <Link href="/blog" className="text-zinc-300 hover:text-white transition-colors">Catalog</Link>
           </div>
 
           {/* Right Side */}
