@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import { SiInstagram, SiTiktok } from "react-icons/si";
 import { FiShoppingCart, FiMenu, FiX } from "react-icons/fi";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,16 +31,19 @@ const Navbar = () => {
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div>
-              <span className="font-bold text-2xl tracking-tighter text-white">BLAZE</span>
-              <span className="font-light text-2xl tracking-tighter text-teal-400">BRAND</span>
-            </div>
-          </Link>
+  <Image
+    src="/assets/logo-2.png"
+    alt="Blaze Brand Logo"
+    width={150}
+    height={100}
+    className="object-contain"
+  />
+</Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-10 text-sm font-medium">
             <Link href="/" className="text-zinc-300 hover:text-white transition-colors">Home</Link>
-            <Link href="/shop" className="text-zinc-300 hover:text-white transition-colors">Shop</Link>
+            <Link href="/shop" className="text-zinc-300 hover:text-white transition-colors">Lab Reports</Link>
             <Link href="/about" className="text-zinc-300 hover:text-white transition-colors">About Us</Link>
             <Link href="/products" className="text-zinc-300 hover:text-white transition-colors">Products</Link>
             <Link href="/blog" className="text-zinc-300 hover:text-white transition-colors">Catalog</Link>
@@ -47,9 +51,9 @@ const Navbar = () => {
 
           {/* Right Side */}
           <div className="flex items-center gap-4">
-            <Button className="hidden md:flex bg-white text-black hover:bg-white/90 rounded-xl px-6 font-medium">
+            {/* <Button className="hidden md:flex bg-white text-black hover:bg-white/90 rounded-xl px-6 font-medium">
               Shop Now
-            </Button>
+            </Button> */}
 
             {/* Mobile Menu Button */}
             <button
@@ -70,12 +74,12 @@ const Navbar = () => {
             <Link href="/shop" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Shop</Link>
             <Link href="/about" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">About Us</Link>
             <Link href="/products" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Products</Link>
-            <Link href="/blog" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Journal</Link>
+            <Link href="/blog" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Catalog</Link>
             
             <div className="pt-6 border-t border-white/10">
-              <Button className="w-full bg-white text-black hover:bg-white/90 rounded-xl py-6 text-base">
+              {/* <Button className="w-full bg-white text-black hover:bg-white/90 rounded-xl py-6 text-base">
                 Shop Collection
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

@@ -236,12 +236,14 @@ const HeroSection = () => {
               <BlurIn delay={0.7}>
                 <Tooltip delayDuration={300}>
                   <TooltipTrigger asChild>
-                    <h3 className={cn(
-                      "font-thin text-4xl text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 ml-1 text-left",
-                      "cursor-default tracking-widest font-display sm:text-7xl md:text-9xl"
-                    )}>
-                      We are the Blaze Brand
-                    </h3>
+                    <h3
+  className={cn(
+    "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 ml-1 text-left cursor-default tracking-widest font-display",
+    "text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
+  )}
+>
+  We are the Blaze Brand
+</h3>
                   </TooltipTrigger>
                   <TooltipContent side="top" className="dark:bg-white dark:text-black">
                     Scroll down

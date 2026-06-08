@@ -118,7 +118,7 @@ const AboutSection = () => {
             </BlurIn>
 
             {/* CTA Buttons */}
-            <BlurIn delay={0.9}>
+            {/* <BlurIn delay={0.9}>
               <div className="flex flex-wrap gap-4 pt-8">
                 <Link href="#shop">
                   <Button size="lg" className="bg-white text-black hover:bg-white/90 px-10 text-base font-medium">
@@ -138,7 +138,7 @@ const AboutSection = () => {
                   </Button>
                 </a>
               </div>
-            </BlurIn>
+            </BlurIn> */}
           </div>
         </div>
       </div>

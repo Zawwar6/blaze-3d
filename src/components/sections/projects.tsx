@@ -14,26 +14,26 @@ const categories = [
 
 const products = {
   disposable: [
-    { id: 1, name: "Blaze Nano", price: "29.99", img: "/assets/vapes/disposable1.png", flavor: "Mango Ice" },
-    { id: 2, name: "Blaze Max", price: "34.99", img: "/assets/vapes/disposable2.png", flavor: "Blue Razz" },
-    { id: 3, name: "Blaze Ultra", price: "39.99", img: "/assets/vapes/disposable3.png", flavor: "Watermelon" },
+    { id: 1, name: "Blaze Nano", img: "/assets/vapes/disposable1.png", flavor: "Mango Ice" },
+    { id: 2, name: "Blaze Max", img: "/assets/vapes/disposable2.png", flavor: "Blue Razz" },
+    { id: 3, name: "Blaze Ultra", img: "/assets/vapes/disposable3.png", flavor: "Watermelon" },
   ],
   pod: [
-    { id: 4, name: "Blaze Pod X", price: "44.99", img: "/assets/vapes/pod1.png", flavor: "Strawberry" },
-    { id: 5, name: "Blaze Pod Pro", price: "49.99", img: "/assets/vapes/pod2.png", flavor: "Mint" },
-    { id: 6, name: "Blaze Pod Mini", price: "32.99", img: "/assets/vapes/pod3.png", flavor: "Cola" },
+    { id: 4, name: "Blaze Pod X",  img: "/assets/vapes/pod1.png", flavor: "Strawberry" },
+    { id: 5, name: "Blaze Pod Pro",  img: "/assets/vapes/pod2.png", flavor: "Mint" },
+    { id: 6, name: "Blaze Pod Mini",  img: "/assets/vapes/pod3.png", flavor: "Cola" },
   ],
   mod: [
-    { id: 7, name: "Blaze Volt 100W", price: "89.99", img: "/assets/vapes/mod1.png", flavor: "—" },
-    { id: 8, name: "Blaze Rage Kit", price: "119.99", img: "/assets/vapes/mod2.png", flavor: "—" },
+    { id: 7, name: "Blaze Volt 100W", img: "/assets/vapes/mod1.png", flavor: "—" },
+    { id: 8, name: "Blaze Rage Kit",img: "/assets/vapes/mod2.png", flavor: "—" },
   ],
   liquid: [
-    { id: 9, name: "Blaze Mango Burst", price: "14.99", img: "/assets/liquids/liquid1.png", flavor: "Mango" },
-    { id: 10, name: "Blaze Arctic Mint", price: "14.99", img: "/assets/liquids/liquid2.png", flavor: "Mint" },
+    { id: 9, name: "Blaze Mango Burst", img: "/assets/liquids/liquid1.png", flavor: "Mango" },
+    { id: 10, name: "Blaze Arctic Mint", img: "/assets/liquids/liquid2.png", flavor: "Mint" },
   ],
   accessory: [
-    { id: 11, name: "Blaze Coil Pack", price: "12.99", img: "/assets/accessories/coils.png", flavor: "—" },
-    { id: 12, name: "Blaze Glass Tip", price: "8.99", img: "/assets/accessories/tip.png", flavor: "—" },
+    { id: 11, name: "Blaze Coil Pack" , img: "/assets/accessories/coils.png", flavor: "—" },
+    { id: 12, name: "Blaze Glass Tip", img: "/assets/accessories/tip.png", flavor: "—" },
   ],
 };
 
@@ -58,7 +58,7 @@ const ProductCard = ({ product }: { product: any }) => {
 
         {/* Price Tag */}
         <div className="absolute top-4 right-4 bg-black/70 text-white text-sm px-3 py-1 rounded-full backdrop-blur-md">
-          ${product.price}
+          {product.price}
         </div>
       </div>
 
