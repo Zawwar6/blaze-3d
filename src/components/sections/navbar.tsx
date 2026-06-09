@@ -31,14 +31,14 @@ const Navbar = () => {
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-  <Image
-    src="/assets/logo-2.png"
-    alt="Blaze Brand Logo"
-    width={150}
-    height={100}
-    className="object-contain"
-  />
-</Link>
+            <Image
+              src="/assets/Blaze.png"
+              alt="Blaze Brand Logo"
+              width={150}
+              height={100}
+              className="object-contain"
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-10 text-sm font-medium">
