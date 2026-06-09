@@ -45,7 +45,7 @@ const Navbar = () => {
             <Link href="/" className="text-zinc-300 hover:text-white transition-colors">Home</Link>
             <Link href="/lab-report" className="text-zinc-300 hover:text-white transition-colors">Lab Reports</Link>
             <Link href="/about" className="text-zinc-300 hover:text-white transition-colors">About Us</Link>
-            <Link href="/products" className="text-zinc-300 hover:text-white transition-colors">Products</Link>
+            <Link href="#projects" className="text-zinc-300 hover:text-white transition-colors">Products</Link>
             <Link href="/blog" className="text-zinc-300 hover:text-white transition-colors">Catalog</Link>
           </div>
 

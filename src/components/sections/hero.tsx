@@ -14,6 +14,7 @@ import ScrollDownIcon from "../scroll-down-icon";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { config } from "@/data/config";
 import gsap from "gsap";
+import Image from "next/image";
 
 const HeroSection = () => {
   const { isLoading } = usePreloader();
@@ -242,7 +243,15 @@ const HeroSection = () => {
     "text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
   )}
 >
-  We are the Blaze Brand
+  We are The   
+  <Image
+    src="/assets/Blaze.png"
+    alt="Blaze Brand Logo"
+    width={350}
+    height={200}
+    className="object-contain w-[220px] sm:w-[280px] md:w-[350px] h-auto"
+  />
+ Brand
 </h3>
                   </TooltipTrigger>
                   <TooltipContent side="top" className="dark:bg-white dark:text-black">

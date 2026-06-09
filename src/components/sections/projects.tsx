@@ -5,48 +5,48 @@ import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 
 const categories = [
-  { id: "disposable", label: "Disposable", count: 12 },
-  { id: "pod", label: "Pod Systems", count: 8 },
-  { id: "mod", label: "Box Mods", count: 6 },
-  { id: "liquid", label: "E-Liquids", count: 24 },
-  { id: "accessory", label: "Accessories", count: 15 },
+  { id: "ALL", label: "ALL", count: 12 },
+  { id: "THCA", label: "THCA", count: 8 },
+  { id: "THCP", label: "THCP", count: 6 },
+  { id: "DELTA 8", label: "DELTA 8", count: 24 },
+  { id: "DELTA 10", label: "DELTA 10", count: 15 },
 ];
 
 const products = {
-  disposable: [
-    { id: 1, name: "Blaze Nano", img: "/assets/vapes/disposable1.png", flavor: "Mango Ice" },
-    { id: 2, name: "Blaze Max", img: "/assets/vapes/disposable2.png", flavor: "Blue Razz" },
-    { id: 3, name: "Blaze Ultra", img: "/assets/vapes/disposable3.png", flavor: "Watermelon" },
+  ALL: [
+    { id: 1, name: "Blaze Nano", img: "/assets/3.jpg" },
+    { id: 2, name: "Blaze Max", img: "/assets/4.jpg" },
+    { id: 3, name: "Blaze Ultra", img: "/assets/5.jpg" },
   ],
-  pod: [
-    { id: 4, name: "Blaze Pod X",  img: "/assets/vapes/pod1.png", flavor: "Strawberry" },
-    { id: 5, name: "Blaze Pod Pro",  img: "/assets/vapes/pod2.png", flavor: "Mint" },
-    { id: 6, name: "Blaze Pod Mini",  img: "/assets/vapes/pod3.png", flavor: "Cola" },
+  THCA: [
+    { id: 4, name: "Blaze Pod X",  img: "/assets/6.jpg" },
+    { id: 5, name: "Blaze Pod Pro",  img: "/assets/7.jpg" },
+    { id: 6, name: "Blaze Pod Mini",  img: "/assets/8.jpg" },
   ],
-  mod: [
-    { id: 7, name: "Blaze Volt 100W", img: "/assets/vapes/mod1.png", flavor: "—" },
-    { id: 8, name: "Blaze Rage Kit",img: "/assets/vapes/mod2.png", flavor: "—" },
+  THCP: [
+    { id: 7, name: "Blaze Volt 100W", img: "/assets/9.jpg" },
+    { id: 8, name: "Blaze Rage Kit",img: "/assets/10.jpg" },
   ],
-  liquid: [
-    { id: 9, name: "Blaze Mango Burst", img: "/assets/liquids/liquid1.png", flavor: "Mango" },
-    { id: 10, name: "Blaze Arctic Mint", img: "/assets/liquids/liquid2.png", flavor: "Mint" },
+  "DELTA 8": [
+    { id: 9, name: "Blaze Mango Burst", img: "/assets/11.jpg" },
+    { id: 10, name: "Blaze Arctic Mint", img: "/assets/12.jpg" },
   ],
-  accessory: [
-    { id: 11, name: "Blaze Coil Pack" , img: "/assets/accessories/coils.png", flavor: "—" },
-    { id: 12, name: "Blaze Glass Tip", img: "/assets/accessories/tip.png", flavor: "—" },
+  "DELTA 10": [
+    { id: 11, name: "Blaze Delta 10", img: "/assets/1.jpg" },
+    { id: 12, name: "Blaze Glass Tip", img: "/assets/8.jpg" },
   ],
 };
 
 const ProductCard = ({ product }: { product: any }) => {
   return (
-    <div className="group relative bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-teal-400/50 transition-all duration-300">
+    <div className="group relative bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-teal-400/50 transition-all duration-300" id="projects">
       <div className="relative h-64 flex items-center justify-center bg-black/40 overflow-hidden">
         <Image
           src={product.img}
           alt={product.name}
-          width={300}
-          height={300}
-          className="w-40 h-40 object-contain transition-transform duration-500 group-hover:scale-110"
+          width={500}
+          height={500}
+          className="w-90 h-90 object-contain transition-transform duration-500 group-hover:scale-110"
         />
 
         {/* Hover Overlay */}
@@ -71,7 +71,7 @@ const ProductCard = ({ product }: { product: any }) => {
 };
 
 const ProjectsSection = () => {
-  const [activeTab, setActiveTab] = useState("disposable");
+  const [activeTab, setActiveTab] = useState("ALL");
 
   return (
     <section className="py-24 bg-[#0a0a0f]">
