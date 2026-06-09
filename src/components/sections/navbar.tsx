@@ -71,7 +71,7 @@ const Navbar = () => {
         <div className="md:hidden bg-[#0a0a0f] border-t border-white/10">
           <div className="px-6 py-8 flex flex-col gap-6 text-lg">
             <Link href="/" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Home</Link>
-            <Link href="/shop" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Shop</Link>
+            <Link href="/lab-report" className="text-zinc-300 hover:text-white transition-colors">Lab Reports</Link>
             <Link href="/about" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">About Us</Link>
             <Link href="/products" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Products</Link>
             <Link href="/blog" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Catalog</Link>
