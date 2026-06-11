@@ -239,11 +239,11 @@ const HeroSection = () => {
                   <TooltipTrigger asChild>
                     <h3
   className={cn(
-    "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 ml-1 text-left cursor-default tracking-widest font-display",
+    "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 ml-1 text-center cursor-default tracking-widest font-display",
     "text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
   )}
 >
-  We are The   
+  The   
   <Image
     src="/assets/Blaze.png"
     alt="Blaze Brand Logo"

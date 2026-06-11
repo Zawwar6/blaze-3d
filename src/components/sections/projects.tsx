@@ -84,13 +84,13 @@ const ProjectsSection = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12 border-b border-white/10 pb-6">
+        <div className="flex flex-wrap cursor-pointer justify-center gap-2 mb-12 border-b border-white/10 pb-6">
           {categories.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveTab(cat.id)}
               className={cn(
-                "px-8 py-3.5 rounded-2xl text-sm font-medium transition-all duration-300",
+                "  px-8 py-3.5 rounded-2xl text-sm font-medium transition-all duration-300",
                 activeTab === cat.id
                   ? "bg-white text-black shadow-lg"
                   : "bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800"
