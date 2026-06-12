@@ -39,7 +39,7 @@ const products = {
 
 const ProductCard = ({ product }: { product: any }) => {
   return (
-    <div className="group relative bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-teal-400/50 transition-all duration-300" id="projects">
+    <div className="group relative bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-teal-400/50 transition-all duration-300">
       <div className="relative h-64 flex items-center justify-center bg-black/40 overflow-hidden">
         <Image
           src={product.img}
