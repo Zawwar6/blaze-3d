@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Navbar from "@/components/sections/navbar";
+import Link from "next/dist/client/link";
 
 const categories = [
   { id: "ALL", label: "ALL" },
@@ -97,9 +98,11 @@ function ProductCard({ product }: { product: any }) {
         />
 
         <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-center items-center gap-3">
+          <Link href={`/products/${product.id}`}>
           <button className="bg-white text-black px-6 py-3 rounded-xl font-medium">
             Quick View
-          </button>
+         </button>
+         </Link>
         </div>
       </div>
 
