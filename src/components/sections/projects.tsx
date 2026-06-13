@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
+import Link from "next/dist/client/link";
 
 const categories = [
   { id: "ALL", label: "ALL", count: 12 },
@@ -51,9 +52,11 @@ const ProductCard = ({ product }: { product: any }) => {
 
         {/* Hover Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-8">
-          <Button className="bg-white text-black hover:bg-white/90 px-8 py-2.5 rounded-xl font-medium">
-            View Details
-          </Button>
+          <Link href={`/products/${product.id}`}>
+          <button className="bg-white text-black px-6 py-3 rounded-xl font-medium">
+            Quick View
+         </button>
+         </Link>
         </div>
 
         {/* Price Tag */}
