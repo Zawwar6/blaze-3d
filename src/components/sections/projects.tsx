@@ -111,7 +111,7 @@ const ProjectsSection = () => {
 
         {/* View All Button */}
         <div className="flex justify-center mt-16">
-          <Button size="lg" className="bg-white text-black hover:bg-white/90 px-12 py-7 text-base rounded-2xl">
+          <Button  size="lg" className="bg-white text-black hover:bg-white/90 px-12 py-7 text-base rounded-2xl">
             View All Products
           </Button>
         </div>
