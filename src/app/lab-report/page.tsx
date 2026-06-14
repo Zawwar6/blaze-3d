@@ -37,7 +37,7 @@ const data = [
     items: [
       { name: "SATIVA GORILLA GLUE", pdf: "https://yourdomain.com/pdfs/gorilla-glue.pdf" },
       { name: "INDICA KUSH", pdf: "https://yourdomain.com/pdfs/kush.pdf" },
-      { name: "Hybrid Wedding Cake", pdf: "https://yourdomain.com/pdfs/wedding-glue.pdf" },
+      { name: "HYBRID WEDDING CAKE", pdf: "https://yourdomain.com/pdfs/wedding-glue.pdf" },
     ],
   },
 
