@@ -231,99 +231,116 @@ const HeroSection = () => {
 
       <div className="grid md:grid-cols-2 h-full relative z-10">
         {/* Left Content */}
-        <div className="h-full flex flex-col justify-center items-center md:items-start px-6 md:px-12 lg:px-20 xl:px-28">
-          {!isLoading && (
-            <div className="max-w-xl space-y-6">
-              <BlurIn delay={0.7}>
-                <Tooltip delayDuration={300}>
-                  <TooltipTrigger asChild>
-                    <h3
-  className={cn(
-    "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 ml-1 text-center cursor-default tracking-widest font-display",
-    "text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
-  )}
->
-  The   
-  <Image
-    src="/assets/Blaze.png"
-    alt="Blaze Brand Logo"
-    width={350}
-    height={200}
-    className="object-contain w-[220px] sm:w-[280px] md:w-[350px] h-auto"
-  />
- Brand
-</h3>
-                  </TooltipTrigger>
-                  <TooltipContent side="top" className="dark:bg-white dark:text-black">
-                    Scroll down
-                  </TooltipContent>
-                </Tooltip>
-              </BlurIn>
+      <div className="h-full mt-10 flex flex-col justify-center items-center md:items-start px-6 md:px-12 lg:px-20 xl:px-28">
 
-              <BlurIn delay={1.1}>
-                <p className="text-2xl text-zinc-400 font-light tracking-wide">
-                  Premium Vaping Experience
-                </p>
-              </BlurIn>
+  {!isLoading && (
+    <div className="max-w-xl space-y-6 text-center md:text-left">
 
-              <BlurIn delay={1.4}>
-                <div className="flex flex-wrap items-center gap-4 pt-4">
-                  <Link href="#shop">
-                    {/* <Button size="lg" className="bg-white hover:bg-white/90 text-black font-medium px-9 py-6 text-base rounded-xl">
-                      Shop Collection
-                    </Button> */}
-                  </Link>
-                  <Link href="#shop">
-                    {/* <Button size="lg" className="bg-white hover:bg-white/90 text-black font-medium px-9 py-6 text-base rounded-xl">
-                      Shop Collection
-                    </Button> */}
-                  </Link>
+      {/* Title */}
+      <BlurIn delay={0.7}>
+        <Tooltip delayDuration={300}>
+          <TooltipTrigger asChild>
 
-                  {/* <div className="flex gap-3">
-                    <Link href={config.social.github} target="_blank" rel="noopener noreferrer">
-                      <Button size="lg" variant="outline" className="border-white/30 hover:bg-white/10 text-white rounded-xl px-5">
-                        <SiGithub size={26} />
-                      </Button>
-                    </Link>
-                    <Link href={config.social.linkedin} target="_blank" rel="noopener noreferrer">
-                      <Button size="lg" variant="outline" className="border-white/30 hover:bg-white/10 text-white rounded-xl px-5">
-                        <SiLinkedin size={26} />
-                      </Button>
-                    </Link>
-                  </div> */}
-                </div>
-              </BlurIn>
+            <div className="flex flex-col items-center md:items-start">
+
+              <h3
+                className={cn(
+                  "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 cursor-default tracking-widest font-display",
+                  "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none"
+                )}
+              >
+                The
+              </h3>
+
+              <Image
+                src="/assets/Blaze.png"
+                alt="Blaze Brand Logo"
+                width={350}
+                height={200}
+                className="object-contain w-[180px] sm:w-[240px] md:w-[350px] h-auto my-2"
+              />
+
+              <h3
+                className={cn(
+                  "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 cursor-default tracking-widest font-display",
+                  "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none"
+                )}
+              >
+                Brand
+              </h3>
+
             </div>
-          )}
-        </div>
 
+          </TooltipTrigger>
+
+          <TooltipContent side="top" className="dark:bg-white dark:text-black">
+            Scroll down
+          </TooltipContent>
+        </Tooltip>
+      </BlurIn>
+
+      {/* Subtitle */}
+      <BlurIn delay={1.1}>
+        <p className="text-lg sm:text-xl md:text-2xl text-zinc-400 font-light tracking-wide">
+          Premium Vaping Experience
+        </p>
+      </BlurIn>
+
+      {/* Buttons */}
+      <BlurIn delay={1.4}>
+        <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 justify-center md:justify-start">
+          
+          <Link href="#shop">
+            {/* button placeholder */}
+          </Link>
+
+        </div>
+      </BlurIn>
+
+    </div>
+  )}
+</div>
         {/* RIGHT SECTION - VAPE WITH SLOW REALISTIC SMOKE */}
-        <div ref={containerRef} className="hidden md:flex items-center justify-center relative overflow-hidden">
-          <div className="relative z-10">
-            <div ref={shadowRef} className="absolute top-[58%] left-1/2 -translate-x-1/2 w-[520px] h-[110px] bg-black/75 rounded-[50%] blur-3xl" />
+       <div
+  ref={containerRef}
+  className="flex items-center justify-center relative overflow-hidden w-full md:w-auto"
+>
+  <div className="relative z-10 flex items-center justify-center">
 
-            <img
-              ref={imageRef}
-              src={imageSrc}
-              alt="Blaze Brand Vape"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              className="w-[690px] h-auto select-none cursor-pointer"
-              style={{ transformStyle: "preserve-3d" }}
-            />
+    {/* Shadow */}
+    <div
+      ref={shadowRef}
+      className="absolute top-[58%] left-1/2 -translate-x-1/2 w-[300px] md:w-[520px] h-[80px] md:h-[110px] bg-black/75 rounded-[50%] blur-3xl"
+    />
 
-            <canvas
-              ref={canvasRef}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-20"
-              style={{ width: "820px", height: "680px" }}
-            />
-          </div>
+    {/* Vape Image (responsive size) */}
+    <img
+      ref={imageRef}
+      src={imageSrc}
+      alt="Blaze Brand Vape"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="w-[260px] sm:w-[320px] md:w-[690px] h-auto select-none cursor-pointer"
+      style={{ transformStyle: "preserve-3d" }}
+    />
 
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[680px] h-[680px] border border-teal-400/10 rounded-full pointer-events-none" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[820px] h-[820px] border border-cyan-400/5 rounded-full pointer-events-none" />
+    {/* Smoke Canvas (responsive + safe scaling) */}
+    <canvas
+      ref={canvasRef}
+      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-20
+                 w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] md:w-[820px] md:h-[680px]"
+    />
+  </div>
 
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[580px] h-48 bg-gradient-to-t from-cyan-400/20 to-transparent blur-3xl pointer-events-none" />
-        </div>
+  {/* Rings (hide or reduce on mobile) */}
+  <div className="absolute inset-0 flex items-center justify-center">
+    <div className="w-[280px] h-[280px] md:w-[680px] md:h-[680px] border border-teal-400/10 rounded-full pointer-events-none" />
+    <div className="w-[340px] h-[340px] md:w-[820px] md:h-[820px] border border-cyan-400/5 rounded-full pointer-events-none absolute" />
+  </div>
+
+  {/* Glow bottom (reduce mobile) */}
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[250px] md:w-[580px] h-32 md:h-48 bg-gradient-to-t from-cyan-400/20 to-transparent blur-2xl pointer-events-none" />
+</div>
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30">
