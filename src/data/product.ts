@@ -1,38 +1,45 @@
 export const allProducts = [
   {
     id: 1,
-    name: "Blaze Nano",
-    image: "/assets/1.jpg",
+    name: "BLAZE 1GM THCA FLOWER (20CT GREEN JAR)",
+    image: "/assets/BLAZE-1GM.jpeg",
     category: "ALL",
-    variants: ["Mango", "Berry", "Ice Mint"],
+    variants: ["GAS MASK INDICA", "GREEN CRACK SATIVA", "BLUE DREAM SATIVA", "SOUR DIESEL HYBRID","GIRL SCOUT COOKIES INDICA"],
   },
   {
     id: 2,
-    name: "Blaze Max",
-    image: "/assets/2.jpg",
+    name: "BLAZE 1GM THCA FLOWER (20 CT RED JAR)",
+    image: "/assets/blaze-red.jpeg",
     category: "ALL",
-    variants: ["Strawberry", "Blueberry", "Lemon"],
+    variants: ["INDICA CRITICAL MASS", "SATIVA CACTUS JACK", "HYBRID ELECTRIC HAZE"],
   },
   {
     id: 3,
-    name: "Blaze Ultra",
-    image: "/assets/3.jpg",
+    name: "BLAZE DELTA 10 1GM PREROLLS (40 COUNT)",
+    image: "/assets/1.jpg",
     category: "ALL",
-    variants: ["Mint", "Watermelon", "Grape"],
+    variants: ["SATIVA CITRON", "GELATO HYBRID"],
   },
   {
     id: 4,
-    name: "Blaze Elite",
-    image: "/assets/4.jpg",
+    name: "BLAZE DELTA 8 1GM PREROLLS (40 COUNT)",
+    image: "/assets/5.jpg",
     category: "ALL",
-    variants: ["Apple", "Cherry", "Peach"],
+    variants: ["SATIVA GORILLA GLUE", "INDICA KUSH", "HYBRID WEDDING CAKE"],
   },
   {
     id: 5,
-    name: "Blaze Elite 2",
-    image: "/assets/4.jpg",
+    name: "BLAZE THCA 1GM PREROLLS (40 COUNT)",
+    image: "/assets/2.jpg",
     category: "ALL",
-    variants: ["Cola", "Energy", "Cool Mint"],
+    variants: ["SATIVA JUNGLE COOKIES", "INDICA ZKITTLES", "HYBRID PINEAPPLE EXPRESS"],
+  },
+   {
+    id: 11,
+    name: "BLAZE THCA DIAMOND DUSTED 1GM PREROLLS (24 COUNT)",
+    image: "/assets/11.jpg",
+    category: "ALL",
+    variants: ["SATIVA STRAWBERRY HAZE", "SATIVA APPLE BUBBA", "INDICA ZOUR WATERMELON", "INDICA BLUEBERRY TANGIE", "INDICA GRAPE DURBAN", "HYBRID GEORGIA PEACH"],
   },
 
   {
@@ -73,4 +80,6 @@ export const allProducts = [
     category: "DELTA10",
     variants: ["Ice Blast", "Frozen Berry", "Arctic Mint"],
   },
+
+ 
 ];

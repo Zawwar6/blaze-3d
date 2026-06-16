@@ -28,7 +28,7 @@ const data = [
     title: "BLAZE DELTA 10 1GM PREROLLS (40 COUNT)",
     items: [
       { name: "SATIVA CITRON", pdf: "https://yourdomain.com/pdfs/citron.pdf" },
-      { name: "INDICA GELATO", pdf: "https://yourdomain.com/pdfs/gelato.pdf" },
+      { name: "GELATO HYBRID", pdf: "https://yourdomain.com/pdfs/gelato.pdf" },
     ],
   },
 

@@ -17,28 +17,33 @@ const products = {
   ALL: [
     {
       id: 1,
-      name: "Blaze Nano",
-      image: "/assets/1.jpg",
+      name: "BLAZE 1GM THCA FLOWER (20CT GREEN JAR)",
+      image: "/assets/BLAZE-1GM.jpeg",
     },
     {
       id: 2,
-      name: "Blaze Max",
-      image: "/assets/2.jpg",
+      name: "BLAZE 1GM THCA FLOWER (20 CT RED JAR)",
+      image: "/assets/blaze-red.jpeg",
     },
     {
       id: 3,
-      name: "Blaze Ultra",
-      image: "/assets/3.jpg",
+      name: "BLAZE DELTA 10 1GM PREROLLS (40 COUNT)",
+      image: "/assets/1.jpg",
     },
     {
       id: 4,
-      name: "Blaze Elite",
-      image: "/assets/4.jpg",
+      name: "BLAZE DELTA 8 1GM PREROLLS (40 COUNT)",
+      image: "/assets/5.jpg",
     },
     {
       id: 5,
-      name: "Blaze Elite",
-      image: "/assets/4.jpg",
+      name: "BLAZE THCA 1GM PREROLLS (40 COUNT)",
+      image: "/assets/2.jpg",
+    },
+    {
+      id: 11,
+      name: "BLAZE THCA DIAMOND DUSTED 1GM PREROLLS (24 COUNT)",
+      image: "/assets/11.jpg",
     },
   ],
 
