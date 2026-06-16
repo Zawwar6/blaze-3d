@@ -45,6 +45,27 @@ const products = {
       name: "BLAZE THCA DIAMOND DUSTED 1GM PREROLLS (24 COUNT)",
       image: "/assets/11.jpg",
     },
+    {
+      id: 12,
+      name: "BLAZE DELTA 8 EXTREME 1GM PREROLLS (30 COUNT)",
+      image: "/assets/17.jpg",
+    },
+    {
+      id: 13,
+      name: "BLAZE THCA GOLD 1GM PREROLLS (40 COUNT)",
+      image: "/assets/18.jpg",
+    },
+    {
+      id: 14,
+      name: "BLAZE THCA ELITE 1GM PREROLLS (40 COUNT)",
+      image: "/assets/blaze-blue.jpeg",
+    },
+    {
+      id: 15,
+      name: "BLAZE THCP - THCA 1GM PREROLLS (30 COUNT)",
+      image: "/assets/24.jpg",
+    }
+
   ],
 
   THCA: [

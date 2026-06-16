@@ -41,6 +41,34 @@ export const allProducts = [
     category: "ALL",
     variants: ["SATIVA STRAWBERRY HAZE", "SATIVA APPLE BUBBA", "INDICA ZOUR WATERMELON", "INDICA BLUEBERRY TANGIE", "INDICA GRAPE DURBAN", "HYBRID GEORGIA PEACH"],
   },
+   {
+    id: 12,
+    name: "BLAZE DELTA 8 EXTREME 1GM PREROLLS (30 COUNT)",
+    image: "/assets/17.jpg",
+    category: "ALL",
+    variants: ["SATIVA RILLA KILLA", "INDICA GRAND DADDY PURP", "HYBRID ICE CREAM CAKE"],
+  },
+   {
+    id: 13,
+    name: "BLAZE THCA GOLD 1GM PREROLLS (40 COUNT)",
+    image: "/assets/18.jpg",
+    category: "ALL",
+    variants: ["SATIVA GAS LEAK", "INDICA OCTANE", "HYBRID PURPLE PUNCH"],
+  },
+   {
+    id: 14,
+    name: "BLAZE THCA ELITE 1GM PREROLLS (40 COUNT)",
+    image: "/assets/blaze-blue.jpeg",
+    category: "ALL",
+    variants: ["SATIVA", "INDICA DARK STAR", "HYBRID BLUE NERDS"],
+  },
+   {
+    id: 15,
+    name: "BLAZE THCP - THCA 1GM PREROLLS (30 COUNT)",
+    image: "/assets/24.jpg",
+    category: "ALL",
+    variants: ["SATIVA GUSHERS", "INDICA WHITE WINDOW", "HYBRID PINK RUNTZ"],
+  },
 
   {
     id: 6,
