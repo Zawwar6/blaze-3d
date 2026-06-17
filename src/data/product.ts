@@ -60,7 +60,7 @@ export const allProducts = [
     name: "BLAZE THCA ELITE 1GM PREROLLS (40 COUNT)",
     image: "/assets/blaze-blue.jpeg",
     category: "ALL",
-    variants: ["SATIVA", "INDICA DARK STAR", "HYBRID BLUE NERDS"],
+    variants: ["SATIVA CANDY CARNIVAL", "INDICA DARK STAR", "HYBRID BLUE NERDS"],
   },
    {
     id: 15,

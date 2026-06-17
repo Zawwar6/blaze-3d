@@ -43,19 +43,22 @@ export default async function ProductPage({
               <h1 className="text-5xl font-bold mt-6 mb-4">
                 {product.name}
               </h1>
-               <select className="mt-4 p-3 bg-zinc-900 rounded-lg border border-zinc-800 w-full">
-              <option value="">
-                Select Variant
-              </option>
+                            <ul className="mt-4 space-y-2">
+                {product.variants.map((variant, i) => (
+                  <li
+                    key={i}
+                    className="relative pl-6 p-2 bg-zinc-900 rounded-lg border border-zinc-800"
+                  >
+                    {/* bullet */}
+                    <span className="absolute left-2 top-1/2 -translate-y-1/2 text-white">
+                      •
+                    </span>
 
-              {product.variants.map(
-                (variant: string, i: number) => (
-                  <option key={i} value={variant}>
                     {variant}
-                  </option>
-                )
-              )}
-            </select>
+                  </li>
+                ))}
+              </ul>
+
             </div>
           
           </div>
