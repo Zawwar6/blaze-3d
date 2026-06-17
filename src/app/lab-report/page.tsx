@@ -83,7 +83,7 @@ const data = [
   {
     title: "BLAZE THCA ELITE 1GM PREROLLS (40 COUNT)",
     items: [
-      { name: "SATIVA", pdf: "https://yourdomain.com/pdfs/sativa.pdf" },
+      { name: "SATIVA CANDY CARNIVAL", pdf: "https://yourdomain.com/pdfs/sativa.pdf" },
       { name: "INDICA DARK STAR", pdf: "https://yourdomain.com/pdfs/dark-star.pdf" },
       { name: "HYBRID BLUE NERDS", pdf: "https://yourdomain.com/pdfs/blue-nerds.pdf" },
     ],
