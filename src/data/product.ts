@@ -67,7 +67,7 @@ export const allProducts = [
     name: "BLAZE THCP - THCA 1GM PREROLLS (30 COUNT)",
     image: "/assets/24.jpg",
     category: "ALL",
-    variants: ["SATIVA GUSHERS", "INDICA WHITE WINDOW", "HYBRID PINK RUNTZ"],
+    variants: ["SATIVA GUSHERS", "INDICA WHITE WIDOW", "HYBRID PINK RUNTZ"],
   },
 
   {
