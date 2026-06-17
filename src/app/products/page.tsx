@@ -70,38 +70,38 @@ const products = {
 
   THCA: [
     {
-      id: 5,
-      name: "THCA Mango",
+      id: 16,
+      name: "BLAZE THCA ELITE 1GM PREROLLS (40 COUNT)",
       image: "/assets/5.jpg",
     },
     {
-      id: 6,
-      name: "THCA Berry",
+      id: 17,
+      name: "BLAZE THCA GOLD 1GM PREROLLS (40 COUNT)",
       image: "/assets/6.jpg",
     },
   ],
 
   THCP: [
     {
-      id: 7,
-      name: "THCP Premium",
+      id: 18,
+      name: "BLAZE THCP - THCA 1GM PREROLLS (30 COUNT)",
       image: "/assets/7.jpg",
     },
   ],
 
   DELTA8: [
     {
-      id: 8,
-      name: "Delta 8 Mint",
-      image: "/assets/8.jpg",
+      id: 19,
+      name: "BLAZE DELTA 8 EXTREME 1GM PREROLLS (30 COUNT)",
+      image: "/assets/17.jpg",
     },
   ],
 
   DELTA10: [
     {
-      id: 9,
-      name: "Delta 10 Ice",
-      image: "/assets/9.jpg",
+      id: 3,
+      name: "BLAZE DELTA 10 1GM PREROLLS (40 COUNT)",
+      image: "/assets/1.jpg",
     },
   ],
 };

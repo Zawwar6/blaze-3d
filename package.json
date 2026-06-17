@@ -45,6 +45,7 @@
     "resend": "^4.0.0",
     "sass": "^1.77.8",
     "socket.io-client": "^4.7.5",
+    "swiper": "^12.2.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.167.1",

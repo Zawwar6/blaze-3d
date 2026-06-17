@@ -1,6 +1,13 @@
+"use client";
 import Navbar from "@/components/sections/navbar";
 import { allProducts } from "../../../data/product";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default async function ProductPage({
   params,
@@ -30,15 +37,31 @@ export default async function ProductPage({
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
             
-            <div className="bg-zinc-900 rounded-3xl p-8 border border-zinc-800">
-              <Image
-                src={product.image}
-                alt={product.name}
-                width={700}
-                height={700}
-                className="w-full h-auto object-contain"
-              />
-            </div>
+           <div className="bg-zinc-900 rounded-3xl p-8 border border-zinc-800">
+  <Swiper
+    modules={[Navigation, Pagination,Autoplay]}
+    navigation
+    pagination={{ clickable: true }}
+    spaceBetween={20}
+    slidesPerView={1}
+    autoplay={{
+  delay: 3000,
+  disableOnInteraction: false,
+}}
+loop={true}
+    
+  >
+    {product.images.map((img: string, i: number) => (
+      <SwiperSlide key={i}>
+        <img
+          src={img}
+          alt={product.name}
+          className="w-full h-auto object-contain rounded-xl"
+        />
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
             <div>
               <h1 className="text-5xl font-bold mt-6 mb-4">
                 {product.name}
