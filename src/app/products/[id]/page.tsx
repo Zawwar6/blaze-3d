@@ -66,7 +66,7 @@ loop={true}
               <h1 className="text-5xl font-bold mt-6 mb-4">
                 {product.name}
               </h1>
-                            <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2">
                 {product.variants.map((variant, i) => (
                   <li
                     key={i}

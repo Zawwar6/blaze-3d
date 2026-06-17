@@ -157,8 +157,10 @@ article img {
 .blog-content a:hover {
   text-decoration: underline;
 }
-
-
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
 
 @layer base {
   * {
