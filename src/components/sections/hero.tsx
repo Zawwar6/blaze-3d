@@ -241,36 +241,33 @@ const HeroSection = () => {
         <Tooltip delayDuration={300}>
           <TooltipTrigger asChild>
 
-       <div className="flex items-center justify-center md:justify-start gap-4 flex-wrap">
+      <div className="flex flex-col items-center justify-center text-center">
+  <h3
+    className={cn(
+      "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 tracking-widest font-display",
+      "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none"
+    )}
+  >
+    The
+  </h3>
 
-              <h3
-                className={cn(
-                  "font-thin text-transparent ml-10 text-center bg-clip-text bg-gradient-to-r from-white to-slate-200 cursor-default tracking-widest font-display",
-                  "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none"
-                )}
-              >
-                The
-              </h3>
+  <Image
+    src="/assets/Blaze.png"
+    alt="Blaze Brand Logo"
+    width={600}
+    height={300}
+    className="object-contain w-[250px] sm:w-[350px] md:w-[450px] lg:w-[550px] h-auto my-4"
+  />
 
-              <Image
-                src="/assets/Blaze.png"
-                alt="Blaze Brand Logo"
-                width={350}
-                height={200}
-                className="object-contain w-[180px] sm:w-[240px] md:w-[350px] h-auto my-2"
-              />
-
-              <h3
-                className={cn(
-                  "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 cursor-default tracking-widest font-display",
-                  "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none"
-                )}
-              >
-                Brand
-              </h3>
-
-            </div>
-
+  <h3
+    className={cn(
+      "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 tracking-widest font-display",
+      "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none"
+    )}
+  >
+    Brand
+  </h3>
+</div>
           </TooltipTrigger>
 
           <TooltipContent side="top" className="dark:bg-white dark:text-black">
@@ -281,7 +278,7 @@ const HeroSection = () => {
 
       {/* Subtitle */}
       <BlurIn delay={1.1}>
-        <p className="text-lg sm:text-xl md:text-2xl text-zinc-400 font-light tracking-wide">
+        <p className="text-lg  text-center sm:text-xl md:text-2xl text-zinc-400 font-light tracking-wide">
           Premium Vaping Experience
         </p>
       </BlurIn>
