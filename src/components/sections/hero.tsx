@@ -241,11 +241,11 @@ const HeroSection = () => {
         <Tooltip delayDuration={300}>
           <TooltipTrigger asChild>
 
-            <div className="flex flex-col items-center md:items-start">
+       <div className="flex items-center justify-center md:justify-start gap-4 flex-wrap">
 
               <h3
                 className={cn(
-                  "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 cursor-default tracking-widest font-display",
+                  "font-thin text-transparent ml-10 text-center bg-clip-text bg-gradient-to-r from-white to-slate-200 cursor-default tracking-widest font-display",
                   "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none"
                 )}
               >
