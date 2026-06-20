@@ -3,12 +3,12 @@ export const allProducts = [
     id: 1,
     name: "BLAZE 1GM THCA FLOWER (20CT GREEN JAR)",
     images: [
-      "/assets/BLAZE-1GM.jpeg",
-      "/assets/27.jpeg",
-      "/assets/28.jpeg",
-      "/assets/29.jpeg",
-      "/assets/30.jpeg",
-      "/assets/31.jpeg",
+      "/assets/Green-Jar-5-flav-main-pic.jpeg",
+      "/assets/Blue-Dream-Sativa.jpeg",
+      "/assets/Gas-Mask-Indica.jpeg",
+      "/assets/Green-Crack-Sativa.jpeg",
+      "/assets/Sour-Diesel-Hybrid.jpeg",
+      "/assets/Girl-Scout-Cookies-Indica.jpeg",
 
     ],
     category: "ALL",
