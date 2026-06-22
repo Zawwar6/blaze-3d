@@ -48,12 +48,12 @@ const products = {
     {
       id: 12,
       name: "BLAZE DELTA 8 EXTREME 1GM PREROLLS (30 COUNT)",
-      image: "/assets/17.jpg",
+      image: "/assets/Blaze-Extreme-Main Pic.jpeg",
     },
     {
       id: 13,
       name: "BLAZE THCA GOLD 1GM PREROLLS (40 COUNT)",
-      image: "/assets/18.jpg",
+      image: "/assets/Blaze-Gold-main-Pic.jpeg",
     },
     {
       id: 14,
