@@ -28,8 +28,10 @@ export const allProducts = [
   {
     id: 3,
     name: "BLAZE DELTA 10 1GM PREROLLS (40 COUNT)",
-    images: ["/assets/1.jpg",
-      "/assets/8.jpg",
+    images: [
+      "/assets/delta-10-main-pic.jpeg",
+      "/assets/Delta-10-Citron-Sativa.jpeg",
+      "/assets/delta-10-gelato-hybrid.jpeg",
     ],
     category: "ALL",
     variants: ["SATIVA CITRON", "GELATO HYBRID"],
@@ -38,9 +40,10 @@ export const allProducts = [
     id: 4,
     name: "BLAZE DELTA 8 1GM PREROLLS (40 COUNT)",
     images: [
-      "/assets/5.jpg",
-      "/assets/6.jpg",
-      "/assets/7.jpg",
+      "/assets/Delta-8-main-picture.jpeg",
+      "/assets/Delta-8-Sativa-Gorilla-Glue.jpeg",
+      "/assets/Delta-8-Indica-Kush.jpeg",
+      "/assets/Delta-8-Hybrid-Wedding-Cake.jpeg",
     ],
     category: "ALL",
     variants: ["SATIVA GORILLA GLUE", "INDICA KUSH", "HYBRID WEDDING CAKE"],

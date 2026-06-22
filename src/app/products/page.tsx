@@ -28,12 +28,12 @@ const products = {
     {
       id: 3,
       name: "BLAZE DELTA 10 1GM PREROLLS (40 COUNT)",
-      image: "/assets/1.jpg",
+      image: "/assets/delta-10-main-pic.jpeg",
     },
     {
       id: 4,
       name: "BLAZE DELTA 8 1GM PREROLLS (40 COUNT)",
-      image: "/assets/5.jpg",
+      image: "/assets/Delta-8-main-picture.jpeg",
     },
     {
       id: 5,
