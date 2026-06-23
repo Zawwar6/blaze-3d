@@ -28,17 +28,17 @@ const products = {
     {
       id: 3,
       name: "BLAZE DELTA 10 1GM PREROLLS (40 COUNT)",
-      image: "/assets/delta-10-main-pic.jpeg",
+      image: "/assets/main-pics.jpeg",
     },
     {
       id: 4,
       name: "BLAZE DELTA 8 1GM PREROLLS (40 COUNT)",
-      image: "/assets/Delta-8-main-picture.jpeg",
+      image: "/assets/main-pic.jpeg",
     },
     {
       id: 5,
       name: "BLAZE THCA 1GM PREROLLS (40 COUNT)",
-      image: "/assets/2.jpg",
+      image: "/assets/yellow-main pic.jpeg",
     },
     {
       id: 11,
@@ -48,12 +48,12 @@ const products = {
     {
       id: 12,
       name: "BLAZE DELTA 8 EXTREME 1GM PREROLLS (30 COUNT)",
-      image: "/assets/Blaze-Extreme-Main Pic.jpeg",
+      image: "/assets/extreme-main-pic.jpeg",
     },
     {
       id: 13,
       name: "BLAZE THCA GOLD 1GM PREROLLS (40 COUNT)",
-      image: "/assets/Blaze-Gold-main-Pic.jpeg",
+      image: "/assets/Gold-main pic.jpeg",
     },
     {
       id: 14,
