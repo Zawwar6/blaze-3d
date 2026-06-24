@@ -43,7 +43,7 @@ const products = {
     {
       id: 11,
       name: "BLAZE THCA DIAMOND DUSTED 1GM PREROLLS (24 COUNT)",
-      image: "/assets/11.jpg",
+      image: "/assets/Blaze-Diamond-Main Pic.jpeg",
     },
     {
       id: 12,
@@ -63,7 +63,7 @@ const products = {
     {
       id: 15,
       name: "BLAZE THCP - THCA 1GM PREROLLS (30 COUNT)",
-      image: "/assets/24.jpg",
+      image: "/assets/Blaze-Pink-main-pic.jpeg",
     }
 
   ],
