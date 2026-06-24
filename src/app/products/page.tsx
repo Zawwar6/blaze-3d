@@ -58,10 +58,10 @@ const products = {
     {
       id: 14,
       name: "BLAZE THCA ELITE 1GM PREROLLS (40 COUNT)",
-      image: "/assets/blaze-blue.jpeg",
+      image: "/assets/elite-main-pic.jpeg",
     },
     {
-      id: 15,
+      id: 18,
       name: "BLAZE THCP - THCA 1GM PREROLLS (30 COUNT)",
       image: "/assets/Blaze-Pink-main-pic.jpeg",
     }
@@ -72,7 +72,7 @@ const products = {
     {
       id: 16,
       name: "BLAZE THCA ELITE 1GM PREROLLS (40 COUNT)",
-      image: "/assets/5.jpg",
+      image: "/assets/elite-main-pic.jpeg",
     },
     {
       id: 17,
@@ -83,7 +83,7 @@ const products = {
 
   THCP: [
     {
-      id: 18,
+      id: 21,
       name: "BLAZE THCP - THCA 1GM PREROLLS (30 COUNT)",
       image: "/assets/7.jpg",
     },
