@@ -19,6 +19,15 @@ import { allProducts } from "@/data/product";
 
 const HeroSection = () => {
   const [rotation, setRotation] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+  const interval = setInterval(() => {
+    setActiveIndex((prev) => (prev + 1) % allProducts.length);
+  }, 2500); // 2.5 seconds
+
+  return () => clearInterval(interval);
+}, [allProducts.length]);
 
 useEffect(() => {
   const interval = setInterval(() => {
@@ -28,6 +37,7 @@ useEffect(() => {
   return () => clearInterval(interval);
 }, []);
   const imageRef = useRef<HTMLImageElement>(null);
+
   const containerRef = useRef<HTMLDivElement>(null);
   const shadowRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -307,46 +317,45 @@ useEffect(() => {
   
 </div>
         {/* RIGHT SECTION - VAPE WITH SLOW REALISTIC SMOKE */}
- <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-  <div
-    className="relative w-[500px] h-[500px]"
-    style={{
-      transform: `rotate(${rotation}deg)`,
-    }}
-  >
-    {allProducts.map((product, index) => {
-      const angle = (index * 360) / allProducts.length;
-      const radius = 220;
+<div
+  className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-[#000000]"
+  style={{ perspective: "1500px" }}
+>
+  {allProducts.map((product, index) => {
+    let offset = index - activeIndex;
 
-      return (
-        <div
-          key={product.id}
-          className="absolute left-1/2 top-1/2"
-          style={{
-            transform: `
-              rotate(${angle}deg)
-              translate(${radius}px)
-              rotate(${-angle - rotation}deg)
-            `,
-          }}
-        >
+    if (offset > allProducts.length / 2)
+      offset -= allProducts.length;
+
+    if (offset < -allProducts.length / 2)
+      offset += allProducts.length;
+
+    return (
+      <div
+        key={product.id}
+        className="absolute transition-all duration-700 ease-out"
+        style={{
+          transform: `
+            translateX(${offset * 180}px)
+            rotateY(${offset * -30}deg)
+            scale(${offset === 0 ? 1 : 0.8})
+          `,
+          opacity: Math.abs(offset) > 2 ? 0 : 1,
+          zIndex: 100 - Math.abs(offset),
+          filter: offset === 0 ? "blur(0px)" : "blur(1px)",
+        }}
+      >
+        <div className="w-[260px] rounded-3xl bg-white p-6 shadow-2xl">
           <img
             src={product.images[0]}
             alt={product.name}
-            className="
-              w-28 h-28
-              object-contain
-              cursor-pointer
-              transition-all
-              duration-300
-              hover:-translate-y-5
-              hover:scale-110
-            "
+            className="w-full h-52 object-contain"
           />
+
         </div>
-      );
-    })}
-  </div>
+      </div>
+    );
+  })}
 </div>
       </div>
 
