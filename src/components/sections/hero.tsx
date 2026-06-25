@@ -8,7 +8,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { usePreloader } from "../preloader";
+
 import { BlurIn } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
 import { SiGithub, SiLinkedin } from "react-icons/si";
@@ -17,7 +17,6 @@ import gsap from "gsap";
 import Image from "next/image";
 
 const HeroSection = () => {
-  const { isLoading } = usePreloader();
   const imageRef = useRef<HTMLImageElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const shadowRef = useRef<HTMLDivElement>(null);
@@ -233,7 +232,7 @@ const HeroSection = () => {
         {/* Left Content */}
       <div className="h-full mt-10 flex flex-col justify-center items-center md:items-start px-6 md:px-12 lg:px-20 xl:px-28">
 
-  {!isLoading && (
+
     <div className="max-w-xl space-y-6 text-center md:text-left">
 
       {/* Title */}
@@ -277,11 +276,11 @@ const HeroSection = () => {
       </BlurIn>
 
       {/* Subtitle */}
-      <BlurIn delay={1.1}>
+      {/* <BlurIn delay={1.1}>
         <p className="text-lg  text-center sm:text-xl md:text-2xl text-zinc-400 font-light tracking-wide">
           Premium Vaping Experience
         </p>
-      </BlurIn>
+      </BlurIn> */}
 
       {/* Buttons */}
       <BlurIn delay={1.4}>
@@ -295,7 +294,7 @@ const HeroSection = () => {
       </BlurIn>
 
     </div>
-  )}
+  
 </div>
         {/* RIGHT SECTION - VAPE WITH SLOW REALISTIC SMOKE */}
        <div

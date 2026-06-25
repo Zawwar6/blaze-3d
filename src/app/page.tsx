@@ -16,16 +16,16 @@ function MainPage() {
   return (
     <>
      <Navbar/>
-      <SmoothScroll>
-        <main className={cn("bg-slate-100 dark:bg-transparent")}>
+      
+        <main >
           <HeroSection />
-          <AboutSection/>
+          {/* <AboutSection/> */}
           {/* <SkillsSection /> */}
-          <ProjectsSection />
+          {/* <ProjectsSection /> */}
           {/* <PricingSection /> */}
           {/* <ContactSection /> */}
         </main>
-      </SmoothScroll>
+    
     </>
   );
 }

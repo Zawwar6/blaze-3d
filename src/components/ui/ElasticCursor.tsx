@@ -13,7 +13,7 @@ import React, {
 import { gsap } from "gsap";
 import { cn } from "@/lib/utils";
 import { useMouse } from "@/hooks/use-mouse";
-import { usePreloader } from "../preloader";
+// import { usePreloader } from "../preloader";
 import { useMediaQuery } from "@/hooks/use-media-query";
 
 // Gsap Ticker Function
@@ -71,7 +71,7 @@ function getRekt(el: HTMLElement) {
 const CURSOR_DIAMETER = 50;
 
 function ElasticCursor() {
-  const { loadingPercent, isLoading } = usePreloader();
+  // const { loadingPercent, isLoading } = usePreloader();
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   // React Refs for Jelly Blob and Text
@@ -102,7 +102,7 @@ function ElasticCursor() {
     var scale = getScale(+vel.x, +vel.y); // Blob Squeeze Amount
 
     // Set GSAP quick setter Values on Loop Function
-    if (!isHovering && !isLoading) {
+    if (!isHovering) {
       set.x(pos.x);
       set.y(pos.y);
       set.width(50 + scale * 300);
@@ -112,7 +112,7 @@ function ElasticCursor() {
     } else {
       set.r(0);
     }
-  }, [isHovering, isLoading]);
+  }, [isHovering]);
 
   const [cursorMoved, setCursorMoved] = useState(false);
   // Run on Mouse Move
