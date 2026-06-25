@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import React, { useRef, useEffect, useCallback } from "react";
+import React, { useRef, useEffect, useCallback, useState } from "react";
 import { Button } from "../ui/button";
 import {
   Tooltip,
@@ -15,8 +15,18 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 import { config } from "@/data/config";
 import gsap from "gsap";
 import Image from "next/image";
+import { allProducts } from "@/data/product";
 
 const HeroSection = () => {
+  const [rotation, setRotation] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setRotation((prev) => prev + 1);
+  }, 30);
+
+  return () => clearInterval(interval);
+}, []);
   const imageRef = useRef<HTMLImageElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const shadowRef = useRef<HTMLDivElement>(null);
@@ -297,45 +307,46 @@ const HeroSection = () => {
   
 </div>
         {/* RIGHT SECTION - VAPE WITH SLOW REALISTIC SMOKE */}
-       <div
-  ref={containerRef}
-  className="flex items-center justify-center relative overflow-hidden w-full md:w-auto"
->
-  <div className="relative z-10 flex items-center justify-center">
+ <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+  <div
+    className="relative w-[500px] h-[500px]"
+    style={{
+      transform: `rotate(${rotation}deg)`,
+    }}
+  >
+    {allProducts.map((product, index) => {
+      const angle = (index * 360) / allProducts.length;
+      const radius = 220;
 
-    {/* Shadow */}
-    <div
-      ref={shadowRef}
-      className="absolute top-[58%] left-1/2 -translate-x-1/2 w-[300px] md:w-[520px] h-[80px] md:h-[110px] bg-black/75 rounded-[50%] blur-3xl"
-    />
-
-    {/* Vape Image (responsive size) */}
-    <img
-      ref={imageRef}
-      src={imageSrc}
-      alt="Blaze Brand Vape"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className="w-[260px] sm:w-[320px] md:w-[690px] h-auto select-none cursor-pointer"
-      style={{ transformStyle: "preserve-3d" }}
-    />
-
-    {/* Smoke Canvas (responsive + safe scaling) */}
-    <canvas
-      ref={canvasRef}
-      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-20
-                 w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] md:w-[820px] md:h-[680px]"
-    />
+      return (
+        <div
+          key={product.id}
+          className="absolute left-1/2 top-1/2"
+          style={{
+            transform: `
+              rotate(${angle}deg)
+              translate(${radius}px)
+              rotate(${-angle - rotation}deg)
+            `,
+          }}
+        >
+          <img
+            src={product.images[0]}
+            alt={product.name}
+            className="
+              w-28 h-28
+              object-contain
+              cursor-pointer
+              transition-all
+              duration-300
+              hover:-translate-y-5
+              hover:scale-110
+            "
+          />
+        </div>
+      );
+    })}
   </div>
-
-  {/* Rings (hide or reduce on mobile) */}
-  <div className="absolute inset-0 flex items-center justify-center">
-    <div className="w-[280px] h-[280px] md:w-[680px] md:h-[680px] border border-teal-400/10 rounded-full pointer-events-none" />
-    <div className="w-[340px] h-[340px] md:w-[820px] md:h-[820px] border border-cyan-400/5 rounded-full pointer-events-none absolute" />
-  </div>
-
-  {/* Glow bottom (reduce mobile) */}
-  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[250px] md:w-[580px] h-32 md:h-48 bg-gradient-to-t from-cyan-400/20 to-transparent blur-2xl pointer-events-none" />
 </div>
       </div>
 

@@ -27,7 +27,8 @@ export const allProducts = [
   },
   {
     id: 3,
-    name: "BLAZE DELTA 10 1GM PREROLLS (40 COUNT)",
+    name: "BLAZE DELTA 10 1GM PREROLLS",
+    count: "(40 COUNT)",
     images: [
       "/assets/main-pics.jpeg",
       "/assets/citron-sativa.jpeg",
@@ -38,7 +39,8 @@ export const allProducts = [
   },
   {
     id: 4,
-    name: "BLAZE DELTA 8 1GM PREROLLS (40 COUNT)",
+    name: "BLAZE DELTA 8 1GM PREROLLS",
+    count: "(40 COUNT)",
     images: [
       "/assets/main-pic.jpeg",
       "/assets/sativa-gorilla-glue.jpeg",
@@ -50,9 +52,10 @@ export const allProducts = [
   },
   {
     id: 5,
-    name: "BLAZE THCA 1GM PREROLLS (40 COUNT)",
+    name: "BLAZE THCA 1GM PREROLLS",
+    count: "(40 COUNT)",
     images: [
-      "/assets/yellow-main pic.jpeg",
+
       "/assets/Jungle-cookies.jpeg",
       "/assets/indica-zkittles.jpeg",
       "/assets/hybrid-pineapple-express.jpeg",
@@ -62,22 +65,23 @@ export const allProducts = [
   },
    {
     id: 11,
-    name: "BLAZE THCA DIAMOND DUSTED 1GM PREROLLS (24 COUNT)",
+    name: "BLAZE THCA DIAMOND DUSTED 1GM PREROLLS ",
+   count: "(24 COUNT)",
     images: [
-      "/assets/Blaze-Diamond-Main Pic.jpeg",
-      "/assets/sativa-apple-bubba.jpeg",
-      "/assets/sativa-strawberry-haze.jpeg",
-      "/assets/indica-blue-berry-tangie.jpeg",
-      "/assets/indica-grape-durban.jpeg",
+      "/assets/Blaze-diamond-main-pic.jpeg",
+      "/assets/Sativa-Apple-Bubba.jpeg",
+      "/assets/Sativa-Strawberry-Haze.jpeg",
+      "/assets/Indica-BlueBerry-Tangie.jpeg",
       "/assets/hybrid-georgia-peach.jpeg",
-      "/assets/indica-zour-watermelon.jpeg",
+      "/assets/Indica-Zour-Watermelon.jpeg",
     ],
     category: "ALL",
     variants: ["SATIVA STRAWBERRY HAZE", "SATIVA APPLE BUBBA", "INDICA ZOUR WATERMELON", "INDICA BLUEBERRY TANGIE", "INDICA GRAPE DURBAN", "HYBRID GEORGIA PEACH"],
   },
    {
     id: 12,
-    name: "BLAZE DELTA 8 EXTREME 1GM PREROLLS (30 COUNT)",
+    name: "BLAZE DELTA 8 EXTREME 1GM PREROLLS",
+    count: "(30 COUNT)",
     images: [
       "/assets/extreme-main-pic.jpeg",
       "/assets/sativa-rilla-killa.jpeg",
@@ -89,7 +93,8 @@ export const allProducts = [
   },
    {
     id: 13,
-    name: "BLAZE THCA GOLD 1GM PREROLLS (40 COUNT)",
+    name: "BLAZE THCA GOLD 1GM PREROLLS",
+    count: "(40 COUNT)",
     images: [
       "/assets/Gold-main pic.jpeg",
       "/assets/sativa-gas-leak.jpeg",
@@ -101,7 +106,8 @@ export const allProducts = [
   },
    {
     id: 14,
-    name: "BLAZE THCA ELITE 1GM PREROLLS (40 COUNT)",
+    name: "BLAZE THCA ELITE 1GM PREROLLS",
+    count: "(40 COUNT)",
     images: [
        "/assets/elite-main-pic.jpeg",
       "/assets/sativa-candy-carnival.jpeg",
@@ -113,7 +119,8 @@ export const allProducts = [
   },
    {
     id: 15,
-    name: "BLAZE THCP - THCA 1GM PREROLLS (30 COUNT)",
+    name: "BLAZE THCP - THCA 1GM PREROLLS",
+    count: "(30 COUNT)",
     images: [
       "/assets/24.jpg",
       "/assets/25.jpg",   
@@ -126,7 +133,8 @@ export const allProducts = [
 
   {
     id: 16,
-    name: "BLAZE THCA ELITE 1GM PREROLLS (40 COUNT)",
+    name: "BLAZE THCA ELITE 1GM PREROLLS",
+    count: "(40 COUNT)",
     images: [
       "/assets/elite-main-pic.jpeg",
       "/assets/sativa-candy-carnival.jpeg",
@@ -138,7 +146,8 @@ export const allProducts = [
   },
    {
     id: 17,
-    name: "BLAZE THCA GOLD 1GM PREROLLS (40 COUNT)",
+    name: "BLAZE THCA GOLD 1GM PREROLLS",
+    count: "(40 COUNT)",
     images: [
       "/assets/18.jpg",
       "/assets/19.jpg",
@@ -150,7 +159,8 @@ export const allProducts = [
 
   {
     id: 18,
-    name: "BLAZE THCP - THCA 1GM PREROLLS (30 COUNT)",
+    name: "BLAZE THCP - THCA 1GM PREROLLS",
+    count: "(30 COUNT)",
     images: [
       "/assets/Blaze-Pink-main-pic.jpeg",
       "/assets/hybrid-pink-runtz.jpeg",
@@ -164,7 +174,8 @@ export const allProducts = [
 
  {
     id: 19,
-    name: "BLAZE DELTA 8 EXTREME 1GM PREROLLS (30 COUNT)",
+    name: "BLAZE DELTA 8 EXTREME 1GM PREROLLS",
+    count: "(30 COUNT)",
     images: [
       "/assets/17.jpg",
       "/assets/16.jpg",
@@ -174,15 +185,7 @@ export const allProducts = [
     variants: ["SATIVA RILLA KILLA", "INDICA GRAND DADDY PURP", "HYBRID ICE CREAM CAKE"],
   },
 
-  {
-    id: 3,
-    name: "BLAZE DELTA 10 1GM PREROLLS (40 COUNT)",
-    images: ["/assets/1.jpg",
-      "/assets/8.jpg",
-    ],
-    category: "ALL",
-    variants: ["SATIVA CITRON", "GELATO HYBRID"],
-  },
+ 
 
  
 ];
