@@ -361,7 +361,7 @@ useEffect(() => {
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30">
-        <ScrollDownIcon />
+        {/* <ScrollDownIcon /> */}
       </div>
     </section>
   );
