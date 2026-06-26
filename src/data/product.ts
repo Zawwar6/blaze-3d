@@ -55,7 +55,6 @@ export const allProducts = [
     name: "BLAZE THCA 1GM PREROLLS",
     count: "(40 COUNT)",
     images: [
-
       "/assets/Jungle-cookies.jpeg",
       "/assets/indica-zkittles.jpeg",
       "/assets/hybrid-pineapple-express.jpeg",
