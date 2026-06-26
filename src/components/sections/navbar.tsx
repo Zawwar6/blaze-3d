@@ -76,6 +76,7 @@ const Navbar = () => {
             <Link href="/about" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">About Us</Link>
             <Link href="/products" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Products</Link>
             <Link href="/blog" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Catalog</Link>
+            <Link href="/contact" className="text-zinc-300 hover:text-white transition-colors">Contact Us</Link>
             
             <div className="pt-6 border-t border-white/10">
               {/* <Button className="w-full bg-white text-black hover:bg-white/90 rounded-xl py-6 text-base">
