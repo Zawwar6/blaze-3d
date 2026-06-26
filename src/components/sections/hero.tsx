@@ -289,9 +289,9 @@ useEffect(() => {
 </div>
           </TooltipTrigger>
 
-          <TooltipContent side="top" className="dark:bg-white dark:text-black">
+          {/* <TooltipContent side="top" className="dark:bg-white dark:text-black">
             Scroll down
-          </TooltipContent>
+          </TooltipContent> */}
         </Tooltip>
       </BlurIn>
 
