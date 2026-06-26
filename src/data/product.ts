@@ -111,7 +111,7 @@ export const allProducts = [
     images: [
        "/assets/elite-main-pic.jpeg",
       "/assets/sativa-candy-carnival.jpeg",
-      "/assets/Dark-Star-Indica.jpeg",
+      "/assets/Dark-star-Indica.jpeg",
       "/assets/Blue-nerds-hybrid.jpeg",
     ],
     category: "ALL",
