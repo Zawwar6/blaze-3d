@@ -1,3 +1,4 @@
+import Navbar from "@/components/sections/navbar";
 import React from "react";
 
 function Page() {
@@ -7,66 +8,90 @@ function Page() {
     console.log(event)
   }
   return (
-    <section>
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-zinc-200">
-          Contact Me
-        </h2>
-        <form action="#" className="space-y-8">
-          <div>
-            <label
-              htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >
-              Your email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-              placeholder="name@flowbite.com"
-              required
-            />
+    <section className="min-h-screen bg-black text-white relative overflow-hidden">
+    <Navbar />
+
+    {/* Background texture */}
+    <div className="absolute inset-0 opacity-10 bg-[url('/assets/noise.png')]" />
+
+    {/* Top Heading */}
+    <div className="pt-28 text-center">
+      <h2 className="text-4xl md:text-6xl font-light">
+        <span className="text-green-500">LET'S</span>
+        <br />
+        CONNECT
+      </h2>
+    </div>
+
+    <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-20 items-center">
+
+      {/* Left Side */}
+      <div>
+        <h1 className="text-5xl md:text-7xl font-light leading-tight">
+          We're Here
+          <br />
+          To Help
+        </h1>
+
+        <p className="text-zinc-400 mt-8 text-lg leading-8">
+          Have questions or need assistance? Reach out to our
+          support team through the form below.
+        </p>
+
+        <div className="mt-12 flex items-center gap-4">
+          <div className="w-12 h-12 rounded-full border border-green-500 flex items-center justify-center">
+            ✉
           </div>
-          <div>
-            <label
-              htmlFor="subject"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >
-              Subject
-            </label>
+
+          <span className="text-xl">
+            info@blazebrand.com
+          </span>
+        </div>
+      </div>
+
+      {/* Right Side */}
+      <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8">
+
+        <form className="space-y-6">
+
+          <div className="grid md:grid-cols-2 gap-4">
             <input
               type="text"
-              id="subject"
-              className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-              placeholder="Let me know how I can help you"
-              required
+              placeholder="Name"
+              className="bg-transparent border border-zinc-700 rounded-xl p-4 outline-none focus:border-green-500"
+            />
+
+            <input
+              type="email"
+              placeholder="Email"
+              className="bg-transparent border border-zinc-700 rounded-xl p-4 outline-none focus:border-green-500"
             />
           </div>
-          <div className="sm:col-span-2">
-            <label
-              htmlFor="message"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-            >
-              Your message
-            </label>
-            <textarea
-              id="message"
-              rows={6}
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Leave a comment..."
-            ></textarea>
-          </div>
+
+          <input
+            type="text"
+            placeholder="Phone"
+            className="w-full bg-transparent border border-zinc-700 rounded-xl p-4 outline-none focus:border-green-500"
+          />
+
+          <textarea
+            rows={6}
+            placeholder="Message"
+            className="w-full bg-transparent border border-zinc-700 rounded-xl p-4 outline-none resize-none focus:border-green-500"
+          />
+
           <button
             type="submit"
-            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-            // onClick={handleSubmit}
+            className="w-full py-5 rounded-full bg-green-600 hover:bg-green-500 transition duration-300 text-lg font-medium shadow-lg shadow-green-500/30"
           >
-            Send message
+            SUBMIT
           </button>
+
         </form>
       </div>
-    </section>
+
+    </div>
+      </section>
   );
 }
 

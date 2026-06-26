@@ -244,9 +244,10 @@ useEffect(() => {
   }, [handleMouseMove]);
 
   return (
-    <section id="hero" className="relative w-full h-screen overflow-hidden bg-[#0a0a0f]">
-      <div className="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] bg-[length:60px_60px]" />
-      <div className="absolute inset-0 bg-gradient-to-br from-teal-950/30 via-transparent to-cyan-950/20" />
+    <section id="hero" className="relative w-full h-screen overflow-hidden bg-[#07120b]">
+     <div className="absolute top-[-200px] left-[-150px] w-[500px] h-[500px] rounded-full bg-green-500/20 blur-[180px]" />
+
+<div className="absolute bottom-[-200px] right-[-150px] w-[500px] h-[500px] rounded-full bg-emerald-400/20 blur-[180px]" />
 
       <div className="grid md:grid-cols-2 h-full relative z-10">
         {/* Left Content */}
@@ -318,7 +319,7 @@ useEffect(() => {
 </div>
         {/* RIGHT SECTION - VAPE WITH SLOW REALISTIC SMOKE */}
 <div
-  className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-[#000000]"
+  className="relative w-full h-screen flex items-center justify-center overflow-hidden"
   style={{ perspective: "1500px" }}
 >
   {allProducts.map((product, index) => {
