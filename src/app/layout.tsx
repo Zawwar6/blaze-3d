@@ -13,6 +13,7 @@ import Script from "next/script";
 import { config } from "@/data/config";
 import SocketContextProvider from "@/contexts/socketio";
 import RemoteCursors from "@/components/realtime/remote-cursors";
+import AgeVerification from "@/components/age-verify/AgeVerification";
 
 export const metadata: Metadata = {
   title: config.title,
@@ -79,6 +80,7 @@ export default function RootLayout({
               <RemoteCursors />
               <TooltipProvider>
                 {/* <Header /> */}
+                <AgeVerification />
                 {children}
                 <Footer />
               </TooltipProvider>
