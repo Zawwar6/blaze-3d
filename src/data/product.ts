@@ -1,7 +1,8 @@
 export const allProducts = [
   {
     id: 1,
-    name: "BLAZE 1GM THCA FLOWER (20CT GREEN JAR)",
+    name: "BLAZE 1GM THCA FLOWER",
+    count: "(20CT GREEN JAR)",
     images: [
       "/assets/Green-jars-main-pic.jpeg",
       "/assets/Blue-Dream-Sativa.jpeg",
@@ -16,12 +17,13 @@ export const allProducts = [
   },
   {
     id: 2,
-    name: "BLAZE 1GM THCA FLOWER (20 CT RED JAR)",
+    name: "BLAZE 1GM THCA FLOWER",
+    count: "(20CT RED JAR)",
     images: [
-      "/assets/red jar.png",
-      "/assets/32.jpeg",
-      "/assets/33.jpeg",
-      "/assets/34.jpeg",
+      "/assets/red-jar-main-pic.jpeg",
+      "/assets/hybrid-electric-haze.jpeg",
+      "/assets/Indica-critical-mass.jpeg",
+      "/assets/sativa-cactus-jack.jpeg",
     ],
     category: "ALL",
     variants: ["INDICA CRITICAL MASS", "SATIVA CACTUS JACK", "HYBRID ELECTRIC HAZE"],

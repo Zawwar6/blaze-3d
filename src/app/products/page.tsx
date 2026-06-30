@@ -23,7 +23,7 @@ const products = {
     {
       id: 2,
       name: "BLAZE 1GM THCA FLOWER (20 CT RED JAR)",
-      image: "/assets/red jar.png",
+      image: "/assets/red-jar-main-pic.jpeg",
     },
     {
       id: 3,
