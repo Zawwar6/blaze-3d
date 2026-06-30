@@ -244,10 +244,20 @@ useEffect(() => {
   }, [handleMouseMove]);
 
   return (
-    <section id="hero" className="relative w-full h-screen overflow-hidden bg-[#07120b]">
-     <div className="absolute top-[-200px] left-[-150px] w-[500px] h-[500px] rounded-full bg-green-500/20 blur-[180px]" />
+   <section
+   id="hero"
+  className="relative w-full h-screen overflow-hidden"
+  style={{
+    backgroundImage: "url('/assets/bg.jpeg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+     {/* <div className="absolute top-[-200px] left-[-150px] w-[500px] h-[500px] rounded-full bg-green-500/20 blur-[180px]" />
 
-<div className="absolute bottom-[-200px] right-[-150px] w-[500px] h-[500px] rounded-full bg-emerald-400/20 blur-[180px]" />
+<div className="absolute bottom-[-200px] right-[-150px] w-[500px] h-[500px] rounded-full bg-emerald-400/20 blur-[180px]" /> */}
+   <div className="absolute inset-0 bg-black/70 z-0" />
 
       <div className="grid md:grid-cols-2 h-full relative z-10">
         {/* Left Content */}
@@ -346,7 +356,7 @@ useEffect(() => {
           filter: offset === 0 ? "blur(0px)" : "blur(1px)",
         }}
       >
-        <div className="w-[260px] rounded-3xl bg-white p-6 shadow-2xl">
+        <div className="w-[260px] rounded-3xl p-6 shadow-2xl">
           <img
             src={product.images[0]}
             alt={product.name}
