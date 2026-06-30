@@ -117,19 +117,7 @@ export const allProducts = [
     category: "ALL",
     variants: ["SATIVA CANDY CARNIVAL", "INDICA DARK STAR", "HYBRID BLUE NERDS"],
   },
-   {
-    id: 15,
-    name: "BLAZE THCP - THCA 1GM PREROLLS",
-    count: "(30 COUNT)",
-    images: [
-      "/assets/24.jpg",
-      "/assets/25.jpg",   
-      "/assets/26.jpg",
-
-    ],
-    category: "ALL",
-    variants: ["SATIVA GUSHERS", "INDICA WHITE WIDOW", "HYBRID PINK RUNTZ"],
-  },
+   
 
   {
     id: 16,
@@ -172,20 +160,4 @@ export const allProducts = [
     variants: ["SATIVA GUSHERS", "INDICA WHITE WIDOW", "HYBRID PINK RUNTZ"],
   },
 
- {
-    id: 19,
-    name: "BLAZE DELTA 8 EXTREME 1GM PREROLLS",
-    count: "(30 COUNT)",
-    images: [
-      "/assets/17.jpg",
-      "/assets/16.jpg",
-      "/assets/15.jpg",
-    ],
-    category: "ALL",
-    variants: ["SATIVA RILLA KILLA", "INDICA GRAND DADDY PURP", "HYBRID ICE CREAM CAKE"],
-  },
-
- 
-
- 
 ];

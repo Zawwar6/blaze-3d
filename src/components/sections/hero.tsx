@@ -360,7 +360,7 @@ useEffect(() => {
           <img
             src={product.images[0]}
             alt={product.name}
-            className="w-full h-52 object-contain"
+            className="w-full h-full object-cover scale-150 transition-transform duration-500 hover:scale-110 rounded-2xl"
           />
 
         </div>
