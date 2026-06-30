@@ -17,7 +17,8 @@ export const allProducts = [
   {
     id: 2,
     name: "BLAZE 1GM THCA FLOWER (20 CT RED JAR)",
-    images: ["/assets/blaze-red.jpeg",
+    images: [
+      "/assets/red jar.png",
       "/assets/32.jpeg",
       "/assets/33.jpeg",
       "/assets/34.jpeg",
