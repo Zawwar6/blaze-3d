@@ -11,10 +11,12 @@ import PricingSection from "@/components/sections/pricing";
 import ContactSection from "@/components/sections/contact";
 import AboutSection from "@/components/sections/about";
 import HeroSection from "@/components/sections/hero";
+import AgeVerification from "@/components/age-verify/AgeVerification";
 
 function MainPage() {
   return (
     <>
+    <AgeVerification/>
      <Navbar/>
       
         <main >

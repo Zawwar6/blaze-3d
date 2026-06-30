@@ -4,49 +4,55 @@ import { useEffect, useState } from "react";
 
 export default function AgeVerification() {
   const [show, setShow] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setShow(true);
+    setMounted(true);
+
+    const verified = sessionStorage.getItem("ageVerified");
+
+    if (!verified) {
+      setShow(true);
+    }
   }, []);
 
   const handleYes = () => {
+    sessionStorage.setItem("ageVerified", "true");
     setShow(false);
   };
 
   const handleNo = () => {
-    window.location.href = "https://google.com";
+    window.location.href = "https://www.google.com";
   };
 
-  if (!show) return null;
+  if (!mounted || !show) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] bg-black/90 backdrop-blur-md flex items-center justify-center px-4">
-      <div className="max-w-md w-full bg-[#111] border border-green-500/30 rounded-3xl p-8 text-center shadow-2xl">
-
-        <h2 className="text-4xl font-bold text-white mb-4">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 backdrop-blur-md px-4">
+      <div className="w-full max-w-md rounded-3xl border border-green-500/30 bg-[#111] p-8 text-center shadow-2xl">
+        <h2 className="mb-4 text-4xl font-bold text-white">
           Age Verification
         </h2>
 
-        <p className="text-zinc-400 mb-8">
+        <p className="mb-8 text-zinc-400">
           You must be 21 years or older to enter this website.
         </p>
 
         <div className="flex gap-4">
           <button
             onClick={handleYes}
-            className="flex-1 py-3 rounded-xl bg-green-600 hover:bg-green-500 text-white font-semibold"
+            className="flex-1 rounded-xl bg-green-600 py-3 font-semibold text-white transition hover:bg-green-500"
           >
-            Yes, I'm 21+
+            Yes, I&apos;m 21+
           </button>
 
           <button
             onClick={handleNo}
-            className="flex-1 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-semibold"
+            className="flex-1 rounded-xl bg-red-600 py-3 font-semibold text-white transition hover:bg-red-500"
           >
             No
           </button>
         </div>
-
       </div>
     </div>
   );

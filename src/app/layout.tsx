@@ -80,7 +80,7 @@ export default function RootLayout({
               <RemoteCursors />
               <TooltipProvider>
                 {/* <Header /> */}
-                <AgeVerification />
+                {/* <AgeVerification /> */}
                 {children}
                 <Footer />
               </TooltipProvider>
