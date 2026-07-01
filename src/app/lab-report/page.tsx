@@ -100,7 +100,7 @@ const data = [
 ];
 
 export default function Page() {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   const handleOpenPdf = (pdf: string) => {
     window.open(pdf, "_blank", "noopener,noreferrer");
