@@ -16,7 +16,7 @@ import AgeVerification from "@/components/age-verify/AgeVerification";
 function MainPage() {
   return (
     <>
-    <AgeVerification/>
+    {/* <AgeVerification/> */}
      <Navbar/>
       
         <main >

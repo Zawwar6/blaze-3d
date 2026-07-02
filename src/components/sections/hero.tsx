@@ -223,6 +223,18 @@ useEffect(() => {
   }, []);
 
   useEffect(() => {
+  gsap.utils.toArray(".floating-img").forEach((img: any, i) => {
+    gsap.to(img, {
+      y: i % 2 === 0 ? -20 : 20,
+      duration: 2 + Math.random(),
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+  });
+}, []);
+
+  useEffect(() => {
     if (imageRef.current) {
       gsap.to(imageRef.current, {
         y: -25,
@@ -244,27 +256,31 @@ useEffect(() => {
   }, [handleMouseMove]);
 
   return (
-   <section
-   id="hero"
+ <section
+  id="hero"
   className="relative w-full h-screen overflow-hidden"
-  style={{
-    backgroundImage: "url('/assets/bg.jpeg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }}
 >
+  {/* Background Video */}
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/assets/video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
      {/* <div className="absolute top-[-200px] left-[-150px] w-[500px] h-[500px] rounded-full bg-green-500/20 blur-[180px]" />
 
 <div className="absolute bottom-[-200px] right-[-150px] w-[500px] h-[500px] rounded-full bg-emerald-400/20 blur-[180px]" /> */}
    <div className="absolute inset-0 bg-black/70 z-0" />
 
-      <div className="grid md:grid-cols-2 h-full relative z-10">
+     <div className="relative z-10 flex items-center justify-center h-full">
         {/* Left Content */}
-      <div className="h-full mt-10 flex flex-col justify-center items-center md:items-start px-6 md:px-12 lg:px-20 xl:px-28">
+      <div className="flex flex-col justify-center items-center h-full px-6 text-center">
 
-
-    <div className="max-w-xl space-y-6 text-center md:text-left">
+      <div className="max-w-5xl space-y-6 flex flex-col items-center justify-center text-center">
 
       {/* Title */}
       <BlurIn delay={0.7}>
@@ -297,6 +313,37 @@ useEffect(() => {
   >
     Brand
   </h3>
+  <div className="mt-14 flex flex-wrap justify-center gap-6">
+  <img
+    src="/assets/green-bg.png"
+    alt=""
+    className="floating-img h-[150px] w-auto object-contain"
+  />
+
+  <img
+    src="/assets/green-bg-(1).png"
+    alt=""
+    className="floating-img h-[150px] w-auto object-contain"
+  />
+
+  <img
+    src="/assets/green-bg-(2).png"
+    alt=""
+    className="floating-img h-[150px] w-auto object-contain"
+  />
+
+  <img
+    src="/assets/green-bg-(3).png"
+    alt=""
+    className="floating-img h-[150px] w-auto object-contain"
+  />
+
+  <img
+    src="/assets/green-bg-(4).png"
+    alt=""
+    className="floating-img h-[150px] w-auto object-contain"
+  />
+</div>
 </div>
           </TooltipTrigger>
 
@@ -306,29 +353,13 @@ useEffect(() => {
         </Tooltip>
       </BlurIn>
 
-      {/* Subtitle */}
-      {/* <BlurIn delay={1.1}>
-        <p className="text-lg  text-center sm:text-xl md:text-2xl text-zinc-400 font-light tracking-wide">
-          Premium Vaping Experience
-        </p>
-      </BlurIn> */}
-
-      {/* Buttons */}
-      <BlurIn delay={1.4}>
-        <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 justify-center md:justify-start">
-          
-          <Link href="#shop">
-            {/* button placeholder */}
-          </Link>
-
-        </div>
-      </BlurIn>
+   
 
     </div>
   
 </div>
         {/* RIGHT SECTION - VAPE WITH SLOW REALISTIC SMOKE */}
-<div
+{/* <div
   className="relative w-full h-screen flex items-center justify-center overflow-hidden"
   style={{ perspective: "1500px" }}
 >
@@ -367,11 +398,7 @@ useEffect(() => {
       </div>
     );
   })}
-</div>
-      </div>
-
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30">
-        {/* <ScrollDownIcon /> */}
+</div> */}
       </div>
     </section>
   );
