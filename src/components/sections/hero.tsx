@@ -313,7 +313,7 @@ useEffect(() => {
   >
     Brand
   </h3>
- <div className="-translate-y-8 flex flex-wrap justify-center gap-6">
+ <div className="-translate-y-8 flex  justify-center gap-6">
   {[
     "/assets/green-bg.png",
     "/assets/green -bg-(1).png",
