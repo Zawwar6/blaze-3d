@@ -287,7 +287,7 @@ useEffect(() => {
         <Tooltip delayDuration={300}>
           <TooltipTrigger asChild>
 
-      <div className="flex flex-col items-center justify-center text-center">
+      <div className="flex flex-col mt-14 items-center justify-center text-center">
   <h3
     className={cn(
       "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 tracking-widest font-display",
@@ -313,36 +313,33 @@ useEffect(() => {
   >
     Brand
   </h3>
-  <div className="mt-14 flex flex-wrap justify-center gap-6">
-  <img
-    src="/assets/green-bg.png"
-    alt=""
-    className="floating-img h-[150px] w-auto object-contain"
-  />
-
-  <img
-    src="/assets/green-bg-(1).png"
-    alt=""
-    className="floating-img h-[150px] w-auto object-contain"
-  />
-
-  <img
-    src="/assets/green-bg-(2).png"
-    alt=""
-    className="floating-img h-[150px] w-auto object-contain"
-  />
-
-  <img
-    src="/assets/green-bg-(3).png"
-    alt=""
-    className="floating-img h-[150px] w-auto object-contain"
-  />
-
-  <img
-    src="/assets/green-bg-(4).png"
-    alt=""
-    className="floating-img h-[150px] w-auto object-contain"
-  />
+ <div className="mt-14 flex flex-wrap justify-center gap-6">
+  {[
+    "/assets/green-bg.png",
+    "/assets/green -bg-(1).png",
+    "/assets/green-bg-(2).png",
+    "/assets/green-bg-(3).png",
+    "/assets/green-bg-(4).png",
+  ].map((src, index) => (
+    <div
+      key={index}
+      className="floating-img
+    group
+    w-[170px] h-[220px]
+    rounded-3xl
+   
+    transition-all
+    duration-500
+    overflow-hidden
+    relative"
+    >
+      <img
+        src={src}
+        alt=""
+        className="w-[250px] h-[250px] object-contain transition-transform duration-500 group-hover:scale-110"
+      />
+    </div>
+  ))}
 </div>
 </div>
           </TooltipTrigger>
