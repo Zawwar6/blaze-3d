@@ -311,7 +311,7 @@ useEffect(() => {
       "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none"
     )}
   >
-    Brand
+    Bran
   </h3>
  <div className="mt-14 flex flex-wrap justify-center gap-6">
   {[
