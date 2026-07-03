@@ -287,7 +287,7 @@ useEffect(() => {
         <Tooltip delayDuration={300}>
           <TooltipTrigger asChild>
 
-      <div className="flex flex-col mt-14 items-center justify-center text-center">
+      <div className="flex flex-col translate-y-16 items-center justify-center text-center">
   <h3
     className={cn(
       "font-thin text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 tracking-widest font-display",
@@ -313,7 +313,7 @@ useEffect(() => {
   >
     Brand
   </h3>
- <div className="mt-14 flex flex-wrap justify-center gap-6">
+ <div className="-translate-y-8 flex flex-wrap justify-center gap-6">
   {[
     "/assets/green-bg.png",
     "/assets/green -bg-(1).png",

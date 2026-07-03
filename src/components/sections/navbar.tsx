@@ -34,14 +34,14 @@ const Navbar = () => {
             <Image
               src="/assets/Blaze.png"
               alt="Blaze Brand Logo"
-              width={150}
-              height={100}
+              width={250}
+              height={250}
               className="object-contain"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-10 text-sm font-medium">
+          <div className="hidden md:flex items-center gap-10 text-md font-medium">
             <Link href="/" className="text-zinc-300 hover:text-white transition-colors">Home</Link>
             <Link href="/lab-report" className="text-zinc-300 hover:text-white transition-colors">Lab Reports</Link>
             <Link href="/about" className="text-zinc-300 hover:text-white transition-colors">About Us</Link>
