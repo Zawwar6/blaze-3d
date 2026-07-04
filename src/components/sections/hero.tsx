@@ -218,11 +218,7 @@ const HeroSection = () => {
       );
 
     // Fade-in the visual jar grid column
-    gsap.fromTo(".jar-section-reveal",
-      { scale: 0.85, opacity: 0 },
-      { scale: 1, opacity: 1, duration: 1.8, ease: "power3.out" },
-      "-=1.8"
-    );
+ 
 
     // Animate stats counter numbers
     const counters = document.querySelectorAll(".stat-counter");
@@ -446,20 +442,20 @@ const HeroSection = () => {
             </h1>
 
             {/* Strain Indicator & Subtitle */}
-            <div className="title-reveal flex items-center justify-center lg:justify-start gap-3 pt-2">
+            {/* <div className="title-reveal flex items-center justify-center lg:justify-start gap-3 pt-2">
               <span className={cn("text-[10px] tracking-widest font-black px-3 py-1 rounded-md uppercase border transition-all duration-700", activeVariant.colorTheme.accentBg)}>
                 {activeVariant.name.split(" ").slice(-1)[0]}
               </span>
               <span className="text-md sm:text-lg font-light text-zinc-300 tracking-wider">
                 {activeVariant.tagline}
               </span>
-            </div>
+            </div> */}
           </div>
 
           {/* Dynamic Description */}
-          <p className="desc-reveal text-sm sm:text-base text-zinc-400 max-w-xl leading-relaxed font-light">
+          {/* <p className="desc-reveal text-sm sm:text-base text-zinc-400 max-w-xl leading-relaxed font-light">
             {activeVariant.description}
-          </p>
+          </p> */}
 
           {/* CTA Buttons */}
           <div className="btn-reveal flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center">
@@ -547,7 +543,7 @@ const HeroSection = () => {
           </div>
 
           {/* Interactive Variant Dashboard Selector */}
-          <div className="selector-reveal flex flex-wrap gap-2.5 justify-center mt-6 w-full max-w-lg z-30">
+          <div className="selector-reveal flex flex-wrap gap-2.5 justify-center  w-full max-w-lg z-30">
             {HERO_VARIANTS.map((v) => {
               const isActive = v.name === activeVariant.name;
               return (
