@@ -119,7 +119,7 @@ const HeroSection = () => {
         </h1>
 
         {/* CTA Buttons */}
-        <div className="btn-reveal flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center justify-center">
+        {/* <div className="btn-reveal flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center justify-center">
           <button
             ref={primaryBtnRef}
             className={cn(
@@ -139,7 +139,7 @@ const HeroSection = () => {
             <ShieldCheck className="w-4 h-4 text-zinc-400 group-hover:text-white transition-colors" />
             <span>Lab Reports</span>
           </button>
-        </div>
+        </div> */}
 
         {/* Product Image Marquee */}
         <div className="marquee-reveal w-full max-w-5xl">
