@@ -5,6 +5,8 @@ import React, { useRef, useEffect, useCallback } from "react";
 import gsap from "gsap";
 import { ShieldCheck, ArrowRight } from "lucide-react";
 import { allProducts } from "../../data/product";
+import { BlurIn } from "../reveal-animations";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 // Marquee source: every product's main/cover image (images[0]) from the
 // real catalog, so the strip shows one tile per product rather than
@@ -114,9 +116,32 @@ const HeroSection = () => {
       {/* Centered content stack: logo, CTAs, marquee */}
       <div className="relative z-10 w-full min-h-screen flex flex-col items-center justify-center gap-10 sm:gap-12 px-6 py-24 text-center select-none">
         {/* Logo / Main Focal Point */}
-        <h1 className="title-reveal font-display font-extralight tracking-tight text-zinc-100 text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-none">
-          THE BLAZE BRAND
+   <BlurIn delay={1}>
+  <Tooltip delayDuration={300}>
+    <TooltipTrigger asChild>
+      <div
+        className={cn(
+          "flex flex-col items-center justify-center text-center w-full text-white",
+          "cursor-default font-display"
+        )}
+      >
+        <h1 className="font-thin text-6xl sm:text-7xl tracking-widest md:text-9xl leading-none">
+          THE
         </h1>
+
+        <img
+          src="/assets/Blaze.png"
+          alt="Blaze Logo"
+          className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto object-contain my-2"
+        />
+
+        <h1 className="font-thin tracking-widest text-6xl sm:text-7xl md:text-9xl leading-none">
+          BRAND
+        </h1>
+      </div>
+    </TooltipTrigger>
+  </Tooltip>
+</BlurIn>
 
         {/* CTA Buttons */}
         {/* <div className="btn-reveal flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center justify-center">
@@ -141,49 +166,9 @@ const HeroSection = () => {
           </button>
         </div> */}
 
-        {/* Product Image Marquee */}
-        <div className="marquee-reveal w-full max-w-5xl">
-          <div
-            className="relative w-full overflow-hidden"
-            style={{
-              maskImage:
-                "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
-              WebkitMaskImage:
-                "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
-            }}
-          >
-            <div className="marquee-track flex items-center gap-6 sm:gap-8 w-max">
-              {marqueeItems.map((product, i) => (
-                <div
-                  key={`${product.name}-${i}`}
-                  className="flex-shrink-0 w-40 h-40 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md overflow-hidden flex items-center justify-center"
-                >
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover"
-                    draggable={false}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+       
       </div>
 
-      <style jsx>{`
-        .marquee-track {
-          animation: marquee-scroll 28s linear infinite;
-        }
-        @keyframes marquee-scroll {
-          from {
-            transform: translateX(0%);
-          }
-          to {
-            transform: translateX(-50%);
-          }
-        }
-      `}</style>
     </section>
   );
 };
