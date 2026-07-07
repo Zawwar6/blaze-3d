@@ -5,9 +5,20 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-
+       
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute opacity-40 inset-0 w-full h-full object-cover"
+      >
+        <source src="/assets/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <main className="min-h-screen bg-black text-white flex items-center justify-center px-6 py-20">
 
+      
         <div className="text-center max-w-3xl w-full">
 
           {/* Logo */}
@@ -22,15 +33,15 @@ export default function AboutPage() {
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight">
-            About <span className="text-white/70">Us</span>
+          <h1 className="text-4xl text-white sm:text-5xl md:text-6xl font-light tracking-tight">
+            About Us
           </h1>
 
           {/* Divider line */}
           <div className="w-16 h-[2px] bg-white/20 mx-auto my-6" />
 
           {/* Content */}
-          <div className="space-y-5 bg-gradient-to-r from-white via-teal-300 to-cyan-400 bg-clip-text text-transparent text-sm sm:text-base leading-relaxed">
+          <div className="space-y-5 bg-gradient-to-r text-white  bg-clip-text text-transparent text-sm sm:text-base leading-relaxed">
 
             <p>
               Blaze is dedicated to providing premium hemp products that meet the highest standards of quality and consistency.

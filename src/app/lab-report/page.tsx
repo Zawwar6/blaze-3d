@@ -107,22 +107,32 @@ export default function Page() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0f] text-white relative overflow-hidden">
+    <div className="min-h-screen bg-black text-white relative overflow-hidden">
       <Navbar />
 
       {/* background */}
-      <div className="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] bg-[length:50px_50px]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-teal-950/20 via-transparent to-cyan-950/20" />
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute opacity-50 inset-0 w-full h-full object-cover"
+      >
+        <source src="/assets/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      {/* <div className="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] bg-[length:50px_50px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-teal-950/20 via-transparent to-cyan-950/20" /> */}
 
       <div className="relative max-w-6xl mx-auto px-6 pt-32 pb-24">
 
         {/* HEADER */}
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-thin tracking-tighter">
-            Lab <span className="text-teal-400">Reports</span>
+            Lab <span className="text-white">Reports</span>
           </h1>
 
-          <p className="text-zinc-400 mt-6 max-w-2xl mx-auto">
+          <p className="text-white mt-6 max-w-2xl mx-auto">
             Certified product breakdowns & strain listings for full transparency
             and quality assurance.
           </p>
