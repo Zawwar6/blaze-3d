@@ -46,7 +46,6 @@ const Navbar = () => {
             <Link href="/lab-report" className="text-zinc-300 hover:text-white transition-colors">Lab Reports</Link>
             <Link href="/about" className="text-zinc-300 hover:text-white transition-colors">About Us</Link>
             <Link href="/products" className="text-zinc-300 hover:text-white transition-colors">Products</Link>
-            <Link href="/blog" className="text-zinc-300 hover:text-white transition-colors">Catalog</Link>
             <Link href="/contact" className="text-zinc-300 hover:text-white transition-colors">Contact Us</Link>
           </div>
 
@@ -75,7 +74,6 @@ const Navbar = () => {
             <Link href="/lab-report" className="text-zinc-300 hover:text-white transition-colors">Lab Reports</Link>
             <Link href="/about" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">About Us</Link>
             <Link href="/products" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Products</Link>
-            <Link href="/blog" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white">Catalog</Link>
             <Link href="/contact" className="text-zinc-300 hover:text-white transition-colors">Contact Us</Link>
             
             <div className="pt-6 border-t border-white/10">
