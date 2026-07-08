@@ -34,7 +34,7 @@ const Navbar = () => {
             <Image
               src="/assets/Blaze.png"
               alt="Blaze Brand Logo"
-              width={250}
+              width={200}
               height={250}
               className="object-contain"
             />
