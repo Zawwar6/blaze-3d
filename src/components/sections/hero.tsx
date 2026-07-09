@@ -125,7 +125,7 @@ const HeroSection = () => {
           "cursor-default font-display"
         )}
       >
-        <h1 className="font-thin text-6xl sm:text-7xl tracking-widest md:text-9xl leading-none">
+        <h1 className="font-thin text-red-800 text-6xl sm:text-7xl tracking-widest md:text-9xl leading-none">
           THE
         </h1>
 
@@ -135,7 +135,7 @@ const HeroSection = () => {
           className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto object-contain my-2"
         />
 
-        <h1 className="font-thin tracking-widest text-6xl sm:text-7xl md:text-9xl leading-none">
+        <h1 className="font-thin  text-green-800 tracking-widest text-6xl sm:text-7xl md:text-9xl leading-none">
           BRAND
         </h1>
       </div>

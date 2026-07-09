@@ -72,7 +72,7 @@ const products = [
     id: 18,
     name: "BLAZE THCP - THCA 1GM PREROLLS (30 COUNT)",
     image: "/assets/Blaze-Pink-main-pic.jpeg",
-    category: "THCP",
+    category: ["THCP", "THCA"],
   },
 ];
 
