@@ -125,7 +125,7 @@ const HeroSection = () => {
           "cursor-default font-display"
         )}
       >
-        <h1 className="font-thin text-red-800 text-6xl sm:text-7xl tracking-widest md:text-9xl leading-none">
+        <h1 className="font-thin text-green-800 text-6xl sm:text-7xl tracking-widest md:text-9xl leading-none">
           THE
         </h1>
 
@@ -133,6 +133,7 @@ const HeroSection = () => {
           src="/assets/Blaze.png"
           alt="Blaze Logo"
           className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto object-contain my-2"
+          style={{ filter: "brightness(0) saturate(100%) invert(52%) sepia(85%) saturate(487%) hue-rotate(88deg) brightness(96%) contrast(91%)" }}
         />
 
         <h1 className="font-thin  text-green-800 tracking-widest text-6xl sm:text-7xl md:text-9xl leading-none">

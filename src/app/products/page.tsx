@@ -109,12 +109,16 @@ function ProductCard({ product }: { product: any }) {
 export default function ProductsPage() {
   const [activeTab, setActiveTab] = useState("ALL");
 
-  const filteredProducts =
-    activeTab === "ALL"
-      ? products
-      : products.filter(
-          (product) => product.category === activeTab
-        );
+const filteredProducts =
+  activeTab === "ALL"
+    ? products
+    : products.filter((product) => {
+        if (Array.isArray(product.category)) {
+          return product.category.includes(activeTab);
+        }
+
+        return product.category === activeTab;
+      });
 
   return (
     <>
