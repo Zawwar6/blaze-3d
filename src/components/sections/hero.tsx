@@ -125,7 +125,7 @@ const HeroSection = () => {
           "cursor-default font-display"
         )}
       >
-        <h1 className="font-thin text-green-800 text-6xl sm:text-7xl tracking-widest md:text-9xl leading-none">
+        <h1 className="font-thin text-green-600 text-6xl sm:text-7xl tracking-widest md:text-9xl leading-none">
           THE
         </h1>
 
@@ -136,7 +136,7 @@ const HeroSection = () => {
           style={{ filter: "brightness(0) saturate(100%) invert(52%) sepia(85%) saturate(487%) hue-rotate(88deg) brightness(96%) contrast(91%)" }}
         />
 
-        <h1 className="font-thin  text-green-800 tracking-widest text-6xl sm:text-7xl md:text-9xl leading-none">
+        <h1 className="font-thin  text-green-600 tracking-widest text-6xl sm:text-7xl md:text-9xl leading-none">
           BRAND
         </h1>
       </div>
