@@ -17,8 +17,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Env files
-.env
 .env*.local
 
 # OS junk
 .DS_Store
+config.bat
